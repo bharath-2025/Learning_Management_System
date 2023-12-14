@@ -1,0 +1,36 @@
+
+@model IEnumerable<LearnApp.Models.Query>
+
+
+<partial name="_AdminDashboard"/>
+
+
+<section class="queries">
+    <h1 class="heading">User Queries</h1>
+    <div class="queries-container">
+
+        <table class="table">
+        <thead>
+            <tr>
+            <th class="border" scope="col">UserID</th>
+            <th class="border" scope="col">Email</th>
+            <th class="border" scope="col">Message</th>
+            <th class="border"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+            foreach(var query in Model){
+                <tr>
+                    <th class="border"scope="row">@query.UserId</th>
+                    <td class="border">@query.Email</td>
+                    <td class="border">@query.Message</td>
+                    <td class="border"><a asp-action="ClearQuery" asp-controller="Admins" asp-route-id=@query.QueryId class="btn btn-success">Resolved</a></td>
+                </tr>
+            }
+            }
+        </tbody>
+        </table>
+    </div>
+</section>
+

@@ -1,0 +1,194 @@
+@* 
+@model IEnumerable<LearnApp.Models.Course>
+
+<link rel="stylesheet" href="~/css/AccountStyles.css">
+
+<partial name="_AdminDashboard"/>
+
+<div class="Entire-page">
+    <section class="manage-courses">
+        
+        <div class="courses">
+            @{
+                foreach(var course in Model){
+                    <div class="course-block">
+                        <div class="details">
+                            <span><i class="bi bi-pen"></i>&nbsp;&nbsp;@{@course.CourseId}</span>
+                            <span>@course.CourseName</span>
+                            <span>@course.BatchId</span>
+                        </div>
+                        
+                        <div class="delete-block">
+                            <a asp-action="DeleteCourse" asp-controller="Admins" asp-route-courseid=@course.CourseId class="btn btn-danger">DELETE</a>
+                        </div>
+                    </div>
+                }
+            }
+            
+        </div>
+        <div class="add-course">
+            <h3>ADD A COURSE</h3>
+            <form method="post" asp-action="manageCourses" asp-controller="Admins" enctype = "multipart/form-data">
+                <label >CourseId</label>
+                <input type="text" name="CourseId">
+                <label >CourseName</label>
+                <input type="text" name="CourseName">
+                <label >StartDate</label>
+                <input type="date" name="StartDate">
+                <label >BatchId</label>
+                <input type="text" name="BatchId">
+                <label >Upload video file</label>
+                <input type="file" name="VideoPath">
+                <label >Upload a thumbnail</label>
+                <input type="file" name="PhotoPath">
+                <button type="submit" class="option-btn">Add Course</button>
+            </form>
+
+        </div>
+    </section>
+    <a asp-action="CreateCourse" asp-controller="Admins">Add a new course</a>
+
+    <div asp-validation-summary="All">
+
+    </div>
+</div> *@
+
+
+
+@model IEnumerable<Course>
+
+@{
+    Pager pager = new Pager();
+    int pageNo = 0;
+    if(ViewBag.Pager != null){
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
+
+<link rel="stylesheet" href="~/css/AccountStyles.css">
+
+<partial name="_AdminDashboard" />
+
+<div class="Entire-page">
+    <section class="manage-learners">
+
+        <h2 style="font-weight:bold"> COURSE LIST </h2>
+            <form method="get" asp-action="manageCourses" asp-controller="Admins">
+                <div class="box flex">
+                    <div class="flex-1">
+                        <select class="form-select" name="searchBy">
+                            @if(ViewBag.CurrentSearchBy == "CourseId"){
+                                <option value="CourseId" selected="selected">CourseID</option>
+                            }
+                            else{
+                                <option value="CourseId">CourseID</option>
+                            }
+                            @if(ViewBag.CurrentSearchBy == "CourseName"){
+                                <option value="CourseName" selected="selected">CourseName</option>
+                            }
+                            else{
+                                <option value="CourseName">CourseName</option>
+                            }
+                            @if(ViewBag.CurrentSearchBy == "BatchId"){
+                                <option value="BatchId" selected="selected">Batch</option>
+                            }
+                            else{
+                                <option value="BatchId">Batch</option>
+                            }
+
+
+                        </select>
+                    </div>
+                    <div class="flex-1">
+                        <input type="search" id="Search" class="form-input" name="searchString" value=@ViewBag.CurrentSearchString placeholder="Search" />
+                    </div>
+                    <div class="flex-1">
+                        <button class="button button-blue-black" type="submit">Search</button>
+                        <a asp-action="manageCourses" asp-controller="Admins" class="link-hover">Show All</a>
+                    </div>
+                </div>
+            </form>
+
+            <br>
+
+            <table class="table w-100 mt">
+
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>CourseId</th>
+                        <th>CourseName</th>
+                        <th>Batch</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @foreach(var course in Model){
+                        <tr>
+                            <th><i class="bi bi-pen"></th>
+                            <td>@course.CourseId</td>
+                            <td>@course.CourseName</td>
+                            <td>@course.BatchId</td>
+                            <td>
+                                <a asp-action="DeleteCourse" asp-controller="Admins" asp-route-courseid=@course.CourseId class="btn btn-danger" style="font-size:1.5rem;font-weight:bold;color:black">DELETE</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+
+            </table>
+
+
+    </section>
+    
+    <div class="container">
+       
+        @if(pager.TotalPages > 0){
+            <ul class="pagination justify-content-end">
+                @* For First and Preivious pages *@
+
+                @if(pager.CurrentPage > 1){
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="Admins" asp-action="ManageCourses" asp-route-page="1" asp-route-searchBy=@ViewBag.CurrentSearchBy asp-route-searchString=@ViewBag.CurrentSearchString>First</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="Admins" asp-action="ManageCourses" asp-route-page="@(pager.CurrentPage - 1)" asp-route-searchBy=@ViewBag.CurrentSearchBy asp-route-searchString=@ViewBag.CurrentSearchString><i class="fa-solid fa-caret-left"></i></a>
+                    </li>
+                }
+
+                @* For current pages *@
+
+                @for(var pg = pager.StartPage ; pg <= pager.EndPage ; pg++){
+                    <li class="page-item @(pg == pager.CurrentPage ? "active" : "" )">
+                        <a class="page-link" asp-controller="Admins" asp-action="manageCourses" asp-route-page="@pg" asp-route-searchBy=@ViewBag.CurrentSearchBy asp-route-searchString=@ViewBag.CurrentSearchString>@pg</a>
+                    </li>
+                }
+
+                @* for next and last pages *@
+
+                @if(pager.CurrentPage < pager.TotalPages){
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="Admins" asp-action="ManageCourses" asp-route-page="@(pager.CurrentPage + 1)" asp-route-searchBy=@ViewBag.CurrentSearchBy asp-route-searchString=@ViewBag.CurrentSearchString><i class="fa-solid fa-caret-right"></i></a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="Admins" asp-action="ManageCourses" asp-route-page="@(pager.TotalPages)" asp-route-searchBy=@ViewBag.CurrentSearchBy asp-route-searchString=@ViewBag.CurrentSearchString>Last</a>
+                    </li>
+                }
+            </ul>
+        }
+
+    </div>
+
+    <span class="text-success" style="font-size:1.5rem;font-weight:bold">@ViewBag.Notify</span>
+    <a asp-action="CreateCourse" asp-controller="Admins">Add a new course</a>
+
+    <div asp-validation-summary="All" class=text-danger>
+
+    </div>
+</div>
+
+
+
+

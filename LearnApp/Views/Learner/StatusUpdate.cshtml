@@ -1,0 +1,24 @@
+
+@model LearnApp.Models.StatusReport
+
+<!-- Importing UserDashboard Partial View-->
+<partial name="_UserDashboard"></partial>
+
+<section class="status-update">
+    <h1 class="heading">STATUS UPDATE</h1>
+    <div class="status-container">
+        <form method="Post">
+            <label>UserID</label>
+            <input type="text" readonly value=@ViewBag.userid asp-for="UserId" required class="text-box" style="font-weight: bold;">
+            <label>BatchId</label>
+            <input type="text" readonly value=@ViewBag.batchid asp-for="BatchId" required class="text-box" style="font-weight: bold;">
+            <label>Date</label>
+            <input type="date" asp-for="UpdatedDate" required class="text-box" style="font-weight: bold;">
+            <label>Today's Status</label>
+            <textarea  cols="30" rows="10" asp-for="Message" required placeholder="Update Your Status Now" style="font-weight: bold;"></textarea>
+            <input type="submit"  class="inline-btn">
+            <span style="font-size:1.5rem;font-style:italic;font-weight:bold" class="text-success">@TempData["notify"]</span>
+        </form>
+    </div>
+</section>
+

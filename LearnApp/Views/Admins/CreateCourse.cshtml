@@ -1,0 +1,105 @@
+
+<link rel="stylesheet" href="~/css/AccountStyles.css">
+
+<partial name="_AdminDashboard" />
+
+<div class="Entire-page">
+
+        <div style="width:100%;height:100%">
+            <div class="text-secondary" style="font-weight:bolder">
+                <span >Admin</span>
+                <i class="fa-solid fa-caret-right"></i>
+                <span>Add Course</span>
+                <span>@ViewBag.Notify</span>
+            </div>
+
+        <div class="form-container mt-5">
+            <h1 style="font-weight:bold" class="text-warning">CREATE COURSE</h1>
+
+            <form method="post" enctype = "multipart/form-data" asp-controller="Admins" asp-action="CreateCourse">
+                @* Course ID *@
+                <div class="form-field flex">
+                    <div class="w-25">
+                        <label class="form-label pt">Course ID</label>
+                    </div>
+                    <div class="flex-1">
+                        <input type="text" class="form-input"  name="CourseId" required/>
+                        <span class="text-red"></span>
+                    </div>
+                </div>
+
+                @* Course Name *@
+                <div class="form-field flex">
+                    <div class="w-25">
+                        <label class="form-label pt">Course Name</label>
+                    </div>
+                    <div class="flex-1">
+                        <input type="text" class="form-input"  name="CourseName" required/>
+                        <span class="text-red"></span>
+                    </div>
+                </div>
+
+                @* StartDate *@
+                <div class="form-field flex">
+                    <div class="w-25">
+                        <label class="form-label pt">Start Date</label>
+                    </div>
+                    <div class="flex-1">
+                        <input type="date" class="form-input"  name="StartDate" required/>
+                        <span class="text-red"></span>
+                    </div>
+                </div>
+
+                @* BatchId *@
+                <div class="form-field flex">
+                    <div class="w-25">
+                        <label class="form-label pt">Batch ID</label>
+                    </div>
+                    <div class="flex-1">
+                        <input type="text" class="form-input"  name="BatchId" required/>
+                        <span class="text-red"></span>
+                    </div>
+                </div>
+
+                @* Video file *@
+                <div class="form-field flex">
+                    <div class="w-25">
+                        <label class="form-label pt">Upload video file</label>
+                    </div>
+                    <div class="flex-1">
+                        <input type="file" class="form-input"  name="VideoPath" required/>
+                        <span class="text-red"></span>
+                    </div>
+                </div>
+
+                @* Photo file *@
+                <div class="form-field flex">
+                    <div class="w-25">
+                        <label class="form-label pt">Upload a thumbnail</label>
+                    </div>
+                    <div class="flex-1">
+                        <input type="file" class="form-input"  name="PhotoPath" required/>
+                        <span class="text-red"></span>
+                    </div>
+                </div>
+
+
+
+                @* Register button *@
+                <div class="form-field flex">
+                    <div class="w-25"></div>
+                    <div class="flex-1">
+                        <button class="btn btn-success" type="submit">Add Course</button>
+                        <a  asp-action="manageCourses" asp-controller="Admins" style="text-decoration: none;margin-left:3rem">Back to courses</a>
+                    </div>
+                </div>
+            
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

@@ -1,0 +1,409 @@
+
+@model LearnApp.Models.Query
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+<style>
+
+:root{
+    
+    --main-color:#3498db;
+    --red:#e74c3c;
+    --orange:#e67e22;
+    --purple:#8e44ad;
+    --white:#fff;
+    --silver:#a3a5a7;
+    --black:#30455a;
+    --light-bg:#eee;
+    --border:.2rem solid rgba(0,0,0,.2);
+}
+
+
+*{
+    /* font-family: 'PT Serif', serif; */
+    font-family: 'Shantell Sans', cursive;
+    margin:0;padding:0;
+    box-sizing: border-box;
+    border:none;outline:none;
+    text-decoration: none;
+}
+
+*::selection{
+    background-color: green;
+    color:var(--white)
+}
+
+html{
+    font-size: 50%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--light-bg);   
+}
+
+body.active{
+    padding-left:-0;
+}
+
+/*CSS for all the button types*/
+.option-btn,
+.delete-btn,
+.inline-btn,
+.inline-option-btn,
+.inline-delete-btn{
+    border-radius: .5rem;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color:var(--white);
+    text-transform: capitalize;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.option-btn:hover,
+.delete-btn:hover,
+.inline-btn:hover,
+.inline-option-btn:hover,
+.inline-delete-btn:hover{
+   color: var(--white);
+   background-color: var(--black);
+}
+
+
+.option-btn,
+.delete-btn{
+    display:block;
+}
+
+.inline-btn,
+.inline-option-btn,
+.inline-delete-btn{
+    display: inline-block;
+}
+
+.inline-btn{
+    background-color: var(--main-color);
+}
+
+.option-btn,.inline-option-btn{
+    background-color:var(--main-color);
+}
+
+.delete-btn,.inline-delete-btn{
+    background-color: var(--red);
+}
+
+.heading{
+    padding-bottom: 1.7rem;
+    border-bottom:var(--border);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:var(--black);
+    margin-bottom: 2rem;
+}
+
+
+/*Header Section CSS*/
+
+section{
+    padding: 2rem;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.header{
+    background-color: var(--white);
+    border-bottom: var(--border);
+    position:sticky;
+    top:0;left:0;right:0;
+    z-index: 1000;
+}
+
+.header .flex{
+    display:flex;
+    padding:1.5rem 2rem;
+    position:relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .flex .logo{
+    font-style: italic;
+    font-size: 2.5rem;
+    color:var(--purple);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.header .flex .search-bar{
+    width:50rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    padding:1.5rem 2rem;
+    background-color: var(--light-bg);
+    gap: 1.5rem;
+}
+
+.header .flex .search-bar input{
+    width:100%;
+    background: none;
+    font-size: 2rem;
+    color:var(--black);
+}
+
+.header .flex .icons #search-btn{
+    display: none;
+}
+
+.header .flex .search-bar button{
+    font-size: 1.5rem;
+    color:var(--black);
+    cursor:pointer;
+    background: none;
+}
+
+.header .flex .search-bar button:hover{
+    color:var(--main-color);
+}
+
+.header .flex .icons div{
+    font-size: 2rem;
+    color:var(--black);
+    border-radius: .5rem;
+    height:4.5rem;
+    width:4.5rem;
+    cursor:pointer;
+    background-color: var(--light-bg);
+    line-height: 4.4rem;
+    margin-left:.5rem;
+    text-align: center;
+}
+
+.header .flex .icons div:hover{
+    color:var(--white);
+    background-color: var(--black);
+}
+
+.header .flex .profile{
+    position:absolute;
+    top:120%;right:2rem;
+    background-color: var(--white);
+    padding:2rem;
+    border-radius: .5rem;
+    width:20rem;
+    text-align: center;
+    transform: scale(0);
+    transition:.1s linear;
+}
+
+.header .flex .profile.active{
+    transform: scale(1);
+}
+
+.header .flex .profile img{
+    height:7rem;
+    width:7rem;
+    border-radius:50%;
+    margin-bottom:.5rem;
+}
+
+.header .flex .profile h3{
+    font-size:2rem;
+    color:var(--black);
+}
+
+.header .flex .profile a{
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.header .flex .profile span{
+    font-size: 1.3rem;
+    color:var(--purple);
+}
+
+.header ~.notify{
+    font-size: 2rem;
+    width:100%;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+}
+
+
+/*Contact Section*/
+.contact .contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-radius: .5rem;
+}
+
+.contact-container .contact-image{
+    width:55rem;
+    height:60rem;
+    margin:2rem;
+    background-image: url('../media/helpdesk.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity:0.9;
+}
+
+.contact-container .contact-section{
+    width:55rem;
+    height:60rem;
+    padding:2rem;
+    background-color: var(--white);
+    margin:2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 15px 2px lightgray;
+}
+
+.contact-container .contact-section form h3{
+    font-size: 3.5rem;
+    font-weight: bolder;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.contact-container .contact-section form span{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.contact-container .contact-section form .input-box{
+    width:45rem;
+    height:5rem;
+    background-color: var(--light-bg);
+    color:var(--black);
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    margin:1.5rem;
+    padding:1rem;
+}
+
+
+.contact-container .contact-section form textarea{
+    width:45rem;
+    height:20rem;
+    background-color: var(--light-bg);
+    color:var(--black);
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    margin:1.5rem;
+    padding: 1rem;
+}
+
+.contact-container .contact-section form button{
+    margin-bottom: 2rem;
+}
+
+.contact .contact-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:2rem;
+}
+
+.contact .contact-bar .contact-card{
+    width:30rem;
+    height:18rem;
+    text-align: center;
+    padding:1.5rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 15px 2px lightgray;
+    color:#444;
+    margin:1.5rem;
+}
+
+.contact .contact-bar h2{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom:1.5rem;
+    color:var(--main-color);
+}
+
+.contact .contact-bar h3{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom:.8rem;
+    font-style: italic;
+}
+
+.contact .contact-bar p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.contact .contact-bar p a{
+    text-decoration: none;
+    color:black;
+}
+
+.contact .contact-bar p a:hover{
+    text-decoration: underline;
+    color:var(--main-color)
+}
+
+
+</style>
+
+<!-- Contact section start -->
+
+<section class="contact">
+
+    <h1 class="heading">Contact Now</h1>
+
+    <div class="contact-container">
+        <div class="contact-image"></div>
+        <div class="contact-section">`
+            <form method="post">
+                <h3>Help Desk&nbsp;<i class="bi bi-chat-square-text"></i></h3>
+                <span class="text-success">@TempData["Notify"]</span>
+                
+                <input type="text" required class="input-box" asp-for="UserId"><br>
+                <input type="text" placeholder="enter your email" required class="input-box" asp-for="Email"><br>
+                <textarea cols="30" rows="10" placeholder="enter your message" required class="text-box"  asp-for="Message"></textarea><br>
+                <button type="submit" value="Send Message" class="inline-btn">Send Message</button>
+            </form>
+            
+        </div>
+    </div>
+
+    <div class="contact-bar">
+        <div class="contact-card">
+            <h2><i class="bi bi-telephone-fill"></i></h2>
+            <h3>Phone number</h3>
+            <p><a href="tel:1234567890">1234567890</a></p>
+            <p><a href="tel:9999999999">9999999999</a></p>
+        </div>
+        <div class="contact-card">
+            <h2><i class="bi bi-envelope-fill"></i></h2>
+            <h3>Email</h3>
+            <p><a href="mailto:admin1@aspiresys.com">admin1@aspiresys.com</a></p>
+            <p><a href="helpdesk@aspiresys.com">helpdesk@aspiresys.com</a></p>
+        </div>
+        <div class="contact-card">
+            <h2><i class="bi bi-geo-alt-fill"></i></h2>
+            <h3>Adress</h3>
+            <p><a href="#">SIPCOIT - IT Park Sector1</a></p>
+        </div>
+    </div>
+
+    <a class="btn btn-warning" style="font-size:2rem;font-weight:bold;font-style:italic;width:10rem;height:5rem"
+    asp-action="Index" asp-controller="Home">Back</a>
+
+</section>
+
+
+<!-- Contact section End -->
+

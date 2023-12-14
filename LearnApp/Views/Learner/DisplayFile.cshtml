@@ -1,0 +1,28 @@
+
+@using System.Data;
+@model DataTable
+
+<!-- Importing UserDashboard Partial View-->
+<partial name="_UserDashboard">
+
+
+@{
+    foreach(DataRow item in Model.Rows){
+        <div class="files-section">
+            <h1 class="heading">@item[1]</h1>
+            <div class="pdf-div">
+                @{
+                    string fileBase64Data = Convert.ToBase64String((byte[])item[0]);
+                    string fileBaseURL = string.Format("data:application/pdf;base64,{0}",fileBase64Data);
+                    <embed type="text/pdf" src=@fileBaseURL width="500" height="200">
+                }
+                
+            </div>
+        </div>
+        
+    }
+}
+
+
+
+

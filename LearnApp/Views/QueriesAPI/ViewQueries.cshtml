@@ -1,0 +1,116 @@
+
+@model IEnumerable<LearnApp.Models.Query>
+
+@{
+    Pager pager = new Pager();
+    int pageNo = 0;
+    if(ViewBag.Pager != null){
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
+
+<link rel="stylesheet" href="~/css/AccountStyles.css">
+
+
+<partial name="_AdminDashboard"/>
+
+
+<section class="queries">
+    <h1 class="heading">User Queries</h1>
+     <form method="get" asp-action="ViewQueries" asp-controller="QueriesAPI">
+                <div class="box flex">
+                    <div class="flex-1">
+                        <select class="form-select" name="searchBy">
+                            @if(ViewBag.CurrentSearchBy == "UserId"){
+                                <option value="UserId" selected="selected">UserId</option>
+                            }
+                            else{
+                                <option value="UserId">UserId</option>
+                            }
+                            @if(ViewBag.CurrentSearchBy == "Email"){
+                                <option value="Email" selected="selected">Email</option>
+                            }
+                            else{
+                                <option value="Email">Email</option>
+                            }
+
+
+                        </select>
+                    </div>
+                    <div class="flex-1">
+                        <input type="search" id="Search" class="form-input" name="searchString" value=@ViewBag.CurrentSearchString placeholder="Search" />
+                    </div>
+                    <div class="flex-1">
+                        <button class="button button-blue-black" type="submit">Search</button>
+                        <a asp-action="ViewQueries" asp-controller="QueriesAPI" class="link-hover">Show All</a>
+                    </div>
+                </div>
+            </form>
+    <div class="queries-container">
+
+        <table class="table">
+        <thead>
+            <tr>
+            <th class="border" scope="col">UserID</th>
+            <th class="border" scope="col">Email</th>
+            <th class="border" scope="col">Message</th>
+            <th class="border"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+            foreach(var query in Model){
+                <tr>
+                    <th class="border"scope="row">@query.UserId</th>
+                    <td class="border">@query.Email</td>
+                    <td class="border">@query.Message</td>
+                    <td class="border"><a asp-action="ClearQuery" asp-controller="QueriesAPI" asp-route-QueryId=@query.QueryId class="btn btn-success" style="color:black">Resolved</a></td>
+                </tr>
+            }
+            }
+        </tbody>
+        </table>
+
+        
+    </div>
+
+    <div class="container">
+       
+        @if(pager.TotalPages > 0){
+            <ul class="pagination justify-content-end">
+                @* For First and Preivious pages *@
+
+                @if(pager.CurrentPage > 1){
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="QueriesAPI" asp-action="ViewQueries" asp-route-page="1" asp-route-searchBy=@ViewBag.CurrentSearchBy asp-route-searchString=@ViewBag.CurrentSearchString>First</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="QueriesAPI" asp-action="ViewQueries" asp-route-page="@(pager.CurrentPage - 1)" asp-route-searchBy=@ViewBag.CurrentSearchBy asp-route-searchString=@ViewBag.CurrentSearchString><i class="fa-solid fa-caret-left"></i></a>
+                    </li>
+                }
+
+                @* For current pages *@
+
+                @for(var pg = pager.StartPage ; pg <= pager.EndPage ; pg++){
+                    <li class="page-item @(pg == pager.CurrentPage ? "active" : "" )">
+                        <a class="page-link" asp-controller="QueriesAPI" asp-action="ViewQueries" asp-route-page="@pg" asp-route-searchBy=@ViewBag.CurrentSearchBy asp-route-searchString=@ViewBag.CurrentSearchString>@pg</a>
+                    </li>
+                }
+
+                @* for next and last pages *@
+
+                @if(pager.CurrentPage < pager.TotalPages){
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="QueriesAPI" asp-action="ViewQueries" asp-route-page="@(pager.CurrentPage + 1)" asp-route-searchBy=@ViewBag.CurrentSearchBy asp-route-searchString=@ViewBag.CurrentSearchString><i class="fa-solid fa-caret-right"></i></a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="QueriesAPI" asp-action="ViewQueries" asp-route-page="@(pager.TotalPages)" asp-route-searchBy=@ViewBag.CurrentSearchBy asp-route-searchString=@ViewBag.CurrentSearchString>Last</a>
+                    </li>
+                }
+            </ul>
+        }
+
+    </div>
+</section>
+

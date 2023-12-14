@@ -1,0 +1,100 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Learner</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="~/css/adminDashboard.css">
+
+</head>
+<body>
+
+    <!-- header section start -->
+
+    <header class="header">
+
+        <section class="flex">
+            <a href="#" class="logo">ASPIRE SYSTEMS</a>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+            </div>
+
+            <div class="profile">
+                <img src="~/media/admin.jpg" alt="alternate">
+                <h3>Aspire System's</h3>
+                <span style="color:black;font-weight:bold">@User.Identity?.Name</span>
+                <button  onclick="document.getElementById('id01').style.display='block'" style="width:auto; background-color:#ab14c9" class="option-btn">View Profile</button>
+                <div>
+                    <a asp-action="Logout" asp-controller="Account" class="delete-btn" style="width:auto;color:white;">Logout</a>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    
+    <!-- header section end -->
+
+<!-- side bar section start -->
+
+<section class="side-bar">
+    <div class="close-side-bar">
+        <i class="fas fa-times"></i>
+    </div>
+    <div class="profile">
+        <img src="~/media/admin.jpg" alt="alternate">
+        <h3>Aspire System's</h3>
+        <span>@User.Identity?.Name</span>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="option-btn">View Profile</button>
+        <div id="id01" class="modal">
+  
+            <form class="modal-content animate" method="post">
+                <div class="imgcontainer">
+                <span  onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="~/media/admin.jpg" alt="Avatar" class="avatar">
+                </div>
+
+                <h3 class="name">@User.Identity?.Name</h3>
+                <span class="role">Admin</span>
+
+                
+            </form>
+        </div>
+    </div>
+
+    <div class="menu">
+        <a asp-action="Index" asp-controller="Admins"><i class="fas fa-home"></i><span>HOME</span></a>
+        <a asp-action="manageCourses" asp-controller="Admins"><i class="fas fa-graduation-cap"></i><span>Manage Courses</span></a>
+        <a asp-action="manageLearners" asp-controller="Admins"><i class="fas fa-person"></i><span>Manage Users</span></a>
+        <a asp-action="ManageMaterials" asp-controller="Admins"><i class="bi bi-file-earmark-pdf-fill"></i><span>Manage Materials</span></a>
+        <a asp-action="ViewQueries" asp-controller="QueriesAPI"><i class="fas fa-chalkboard-teacher"></i><span>View Queries</span></a>
+    </div>
+</section>
+
+
+<!-- <footer class="footer">
+
+    <span>all rights reserved  aspire systems</span>
+
+</footer> -->
+
+<!--Side bar section end-->
+
+    <script src="~/js/dashboard.js"></script>
+
+
+
+</body>
+</html>

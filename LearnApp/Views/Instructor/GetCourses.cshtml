@@ -1,0 +1,39 @@
+
+<partial name="_InstructorDashboard"/></partial>
+
+<!-- Courses Section - Similar to the Mylearning page of user -->
+
+<section class="my-learning">
+    <h1 class="heading">Courses</h1>
+    <div class="my-learning-container">
+        <div class="courses-card">
+            @{
+                foreach(var course in Model){
+                    <h3><i class="bi bi-arrow-up-right-circle-fill"></i>&nbsp;&nbsp;@course.CourseName</h3>
+                }
+            }
+           
+            @* <h3><i class="bi bi-arrow-up-right-circle-fill"></i>&nbsp;&nbsp;ASP.NET</h3>
+            <h3><i class="bi bi-arrow-up-right-circle-fill"></i>&nbsp;&nbsp;Angular</h3>
+            <h3><i class="bi bi-arrow-up-right-circle-fill"></i>&nbsp;&nbsp;ASP.NET MVC</h3> *@
+        </div>
+        <div class="courses-container">
+            @{
+                foreach(var course in Model){
+                    <div class="course-box">
+                        <h1>@course.CourseName</h1>
+                        @{
+                            string imageBase64Data = Convert.ToBase64String(@course.PhotoPath);
+                            string imageDataURL = string.Format("data:image/jpg;base64,{0}", imageBase64Data);
+                        }
+                        <div class="course-card" style="background-image: url(@imageDataURL);">
+                            
+                        </div>
+                        <a asp-action="Playlist" asp-controller="Learner" asp-route-coursename=@course.CourseName asp-route-courseid=@course.CourseId class="inline-btn">View Course</a>
+                    </div>
+                }
+            }
+
+        </div>
+    </div>
+</section>

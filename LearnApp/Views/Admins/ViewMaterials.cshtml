@@ -1,0 +1,51 @@
+
+@using System.Data;
+@model DataTable
+
+<style>
+    .files-section{
+        width:80%;
+        font-size: 2rem;
+        @* border:2px solid black; *@
+        padding:5rem;
+        color:black;
+        font-style: italic;
+        font-weight: bolder;
+    }
+    .table-files{
+        padding:2rem;
+    }
+
+</style>
+
+<!-- Importing AdminDashboard Partial View-->
+<partial name="_AdminDashboard">
+
+<section class="files-section">
+
+<h1 class="heading" style="margin-bottom:3.5rem">Materials List</h1>
+
+<table class="table table-striped table-bordered table-files">
+  <thead>
+    <tr>
+      <th scope="col">Course Id</th>
+      <th scope="col">File Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    @{
+        foreach(DataRow material in Model.Rows){
+            <tr>
+                <td>@material[0]</td>
+                <td>@material[2]</td>
+            </tr>
+        }
+    }
+  </tbody>
+
+</table>
+
+
+<a asp-action="ManageMaterials" asp-controller="Admins" class="btn btn-dark" style="width:7rem;height:5rem;font-size:2rem;font-weight:bold;margin-top:5rem">Back</a>
+
+</section>

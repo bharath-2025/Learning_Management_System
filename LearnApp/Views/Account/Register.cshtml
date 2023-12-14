@@ -1,0 +1,147 @@
+@model RegisterDTO
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<link rel="stylesheet" href="~/css/AccountStyles.css">
+
+<partial name="_AdminDashboard" />
+
+<div class="Entire-page">
+
+        <div style="width:100%;height:100%">
+            <div class="text-secondary" style="font-weight:bolder">
+                <span >Admin</span>
+                <i class="fa-solid fa-caret-right"></i>
+                <span>Register</span>
+                <span>@ViewBag.Notify</span>
+            </div>
+
+        <div class="form-container mt-5">
+            <h1 style="font-weight:bold" class="text-warning">REGISTER</h1>
+
+            <form asp-controller="Account" asp-action="Register" method="post">
+                @* PersonId *@
+                <div class="form-field flex">
+                    <div class="w-25">
+                        <label asp-for="PersonId" class="form-label pt">Person ID</label>
+                    </div>
+                    <div class="flex-1">
+                        <input type="text" class="form-input" asp-for="PersonId" />
+                        <span class="text-red" asp-validation-for="PersonId"></span>
+                    </div>
+                </div>
+
+                @* PersonName *@
+                <div class="form-field flex">
+                    <div class="w-25">
+                        <label asp-for="PersonName" class="form-label pt">Person Name</label>
+                    </div>
+                    <div class="flex-1">
+                        <input type="text" class="form-input" asp-for="PersonName" />
+                        <span class="text-red" asp-validation-for="PersonName"></span>
+                    </div>
+                </div>
+
+                @* Email *@
+                <div class="form-field flex">
+                    <div class="w-25">
+                        <label asp-for="Email" class="form-label pt">Email</label>
+                    </div>
+                    <div class="flex-1">
+                        <input type="email" class="form-input" asp-for="Email" />
+                        <span class="text-red" asp-validation-for="Email"></span>
+                    </div>
+                </div>
+
+                @* Role *@
+                <div class="form-field flex">
+                    <div class="w-25">
+                        <label asp-for="Role" class="form-label pt">Assign Role</label>
+                    </div>
+                    <div class="flex-1">
+                        <input type="radio" id="Admin" asp-for="Role" value="Admin">
+                        <label asp-for="Role">Admin</label>
+                        <input type="radio" id="Instructor" asp-for="Role" value="Instructor">
+                         <label asp-for="Role">Instructor</label>
+                        <input type="radio" id="Learner" asp-for="Role" value="Learner" checked>
+                        <label asp-for="Role">Learner</label>
+                        <span class="text-red" asp-validation-for="Role"></span>
+                    </div>
+                </div>
+
+                @* Batch *@
+                <div class="form-field flex">
+                    <div class="w-25">
+                        <label asp-for="BatchId" class="form-label pt">Assign Batch</label>
+                    </div>
+                    <div class="flex-1">
+                        <select type="text" asp-for="BatchId" class="form-select">
+                            <option value=".NET001" selected>.NET001</option>
+                            <option value="Java001">Java001</option>
+                            <option value="EBA">EBA</option>
+                            <option value="IAS">IAS</option>
+                            <option value="none">None</option>
+
+                        </select>
+                        <span class="text-red" asp-validation-for="BatchId"></span>
+                    </div>
+                </div>
+
+                @* Password *@
+                <div class="form-field flex">
+                    <div class="w-25">
+                        <label asp-for="Password" class="form-label pt">Generate Password</label>
+                    </div>
+                    <div class="flex-1">
+                        <input type="password" class="form-input" asp-for="Password" />
+                        <span class="text-red" asp-validation-for="Password"></span>
+                    </div>
+                </div>
+
+                @* Confirm Password *@
+                <div class="form-field flex">
+                    <div class="w-25">
+                        <label asp-for="ConfirmPassword" class="form-label pt">Confirm Password</label>
+                    </div>
+                    <div class="flex-1">
+                        <input type="password" class="form-input" asp-for="ConfirmPassword" />
+                        <span class="text-red" asp-validation-for="ConfirmPassword"></span>
+                    </div>
+                </div>
+
+
+                @* Register button *@
+                <div class="form-field flex">
+                    <div class="w-25"></div>
+                    <div class="flex-1">
+                        <button class="btn btn-success" type="submit">Register</button>
+                        <a  asp-action="manageLearners" asp-controller="Admins" style="text-decoration: none;margin-left:3rem">Back to list</a>
+                        @* validation summary *@
+                        <div asp-validation-summary="All" class=text-danger>
+                            @if (ViewBag.Errors != null)
+                            {
+                                <div class="text-red ml-1">
+                                    <ul>
+                                        @foreach (string error in ViewBag.Errors)
+                                        {
+                                            <li class="ml">@error</li>
+                                        }
+                                    </ul>
+                                </div>
+                            }
+                        </div>
+                       
+                    </div>
+                </div>
+            
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

@@ -1,0 +1,62 @@
+
+@model LoginDTO
+
+<div class="row " id="Login">
+            <div class="col-md-12" id ="LoadPageSection">
+                <div class="col-md-6 " id="LoginImgDiv">
+                    
+                </div>
+                <div class="col-md-6" id="LoginDiv">
+                    <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                        <div class="card-body p-4 p-lg-5 text-black">
+
+                            <form method="post" asp-action="Index" asp-controller="Home">
+
+                            <div class="d-flex align-items-center mb-3 pb-1">
+                                <span class="h1 fw-bold mb-0" style="font-size:3.5rem"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/></svg></i>&nbsp LOGIN</span>
+                            </div>
+
+                            <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;font-size:2.5rem" >Sign into your account</h5>
+
+                            <div class="form-outline mb-4">
+                                <input type="text" class="form-control form-control-lg" asp-for="PersonId" />
+                                <label class="form-label" style="font-size:1.8rem" >UserID</label><br>
+                                <span  class="text-danger" asp-validation-for="PersonId"  style="font-size:1.5rem;font-weight:700"></span><br>
+
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input type="password" class="form-control form-control-lg" asp-for="Password" />
+                                <label class="form-label" style="font-size:1.8rem" >Password</label><br>
+                                <span  class="text-danger" asp-validation-for="Password" style="font-size:1.5rem;font-weight:700"></span><br>
+                            </div>
+
+                            <div class="pt-1 mb-4">
+                                <button class="btn btn-dark btn-md btn-block" type="submit" style="width:8rem;height:3.5rem;font-size:2rem;text-align:center">Login</button>
+                                @* validation summary *@
+                                <div asp-validation-summary="All" class="text-danger" style="margin-top:1rem;font-size:1.4rem;font-weight:700">
+                                    @if (ViewBag.Errors != null)
+                                    {
+                                            <ul>
+                                                @foreach (string error in ViewBag.Errors)
+                                                {
+                                                    <li style="font-size:20px;font-weight:700">@error</li>
+                                                }
+                                            </ul>
+                                    
+                                    }
+                                </div>
+                            </div>
+
+                            <span class="text-danger" style="font-size:1.5rem;font-weight:700">@ViewData["notify"]</span><br>
+
+                            <a class="small text-dark" asp-action="HelpDesk" asp-controller="Home" style="font-size:1.7rem;font-weight:bolder;">Forgot password?</a>
+                            
+                            </form>
+
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>

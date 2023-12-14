@@ -1,0 +1,245 @@
+/*Home Page CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+
+:root{
+  --main-color:black;
+}
+
+html{
+  font-size:62%;
+}
+
+body{
+  background-color: #E6E6FA;
+  font-family: 'Shantell Sans', cursive;
+  outline: none; border:none;
+   text-decoration: none;
+}
+
+
+#desc{
+  width:80%;
+  height:70%;
+  padding:2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+#desc h3{
+  font-size:4rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
+
+#desc p{
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: bold;
+  color:#444;
+}
+
+.explore{
+  font-weight: bold;
+  color:black;
+  position:relative;
+  bottom:30rem;
+  display: none;
+  text-align: center;
+}
+
+.explore h2{
+  font-size: 2.5rem;
+}
+
+#LoadPageSection{
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+}
+  
+.landingAnimation {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transform:
+    rotateX(51deg)
+    rotateZ(43deg);
+  transform-style: preserve-3d;
+  border-radius: 32px;
+  box-shadow:
+    1px 1px 5px 1px #E6E6FA,
+    -1px 0 28px 0 rgba(34, 33, 81, 0.5),
+    28px 28px 28px 0 rgba(34, 33, 81, 0.5);
+  transition:
+    .4s ease-in-out transform,
+    .4s ease-in-out box-shadow;
+  background-color: #33006F;
+}
+
+.landingAnimation:hover {
+  transform:
+    translate3d(0px, -16px, 0px)
+    rotateX(51deg)
+    rotateZ(43deg);
+  box-shadow:
+    1px 1px 0 1px #E6E6FA,
+    -1px 0 28px 0 rgba(34, 33, 81, 0.3),
+    54px 54px 28px -10px rgba(34, 33, 81, 0.3);
+
+}
+
+#anim-section{
+  width:25rem;
+  height:25rem;
+}
+
+#anim-section span{
+  font-size: 2.5rem;
+  font-weight: 500;
+  color:white;
+}
+
+.landingAnimation:hover + .explore{
+  display: block;
+}
+
+#LoginImgDiv{
+  height:80%;
+  background-image: url('../media/login.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+#LoginDiv{
+  height:80%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#myCarousel{
+  margin-top: 10vh;;
+  width:80%;
+  height:90%;
+}
+
+.carousel-inner{
+  height:100%;
+}
+
+.carousel-item{
+  width:100%;
+  height:80%;
+}
+
+.details-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width:100%;
+  height:100%;
+}
+
+.detail-card{
+  width:25%;
+  height:68%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(218, 60, 60, 0);
+  line-height: 1.42857143;
+  color: rgb(73, 173, 212);
+  font-family: medium;
+  font-size: 2rem;
+  font-weight: 500;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  box-shadow:
+    1px 1px 5px 1px #f9f9fb,
+    -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+  margin: 30px 15px 30px;
+  border-radius: 1rem;
+  padding: 20px 20px;
+  background-color: rgb(15, 13, 7);
+}
+
+.detail-card:hover{
+  width:26%;
+  height:69%;
+  transition:.1s ease-in-out;
+  font-size: 2.2rem;
+}
+
+.detail-card h3{
+  color:white;
+  margin-bottom:2rem;
+  font-size:2.5rem;
+}
+
+#myCarousel h4{
+  font-size: 3.5rem;
+}
+
+
+.ThreeD-text{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+    text-shadow: 1px 1px 1px #E6E6FA,
+        1px 2px 1px #E6E6FA,
+        1px 3px 1px #E6E6FA,
+        1px 4px 1px #E6E6FA,
+        1px 5px 1px #E6E6FA,
+        
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+
+}
+
+/* 
+Media Queries Section */
+
+
+@media (max-width:1280px){
+  html{
+    font-size: 55%;
+  }
+}
+
+@media (max-width:1000px){
+  html{
+    font-size: 48%;
+  }
+
+  #Details{
+    display:none;
+  }
+}
+
+@media (max-width:783px){
+  html{
+    font-size: 42%;
+  }
+}
+
+
+
+
+
+

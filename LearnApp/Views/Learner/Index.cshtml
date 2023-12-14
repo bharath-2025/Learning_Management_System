@@ -1,0 +1,191 @@
+
+
+@model IEnumerable<LearnApp.Models.Course>
+@using System;
+
+<!-- Importing the Dashboard Partial -->
+<partial name="_UserDashboard"/>
+
+<!-- Categories section start -->
+
+<section class="categories">
+
+    <h1 class="heading">Categories</h1>
+
+    <div class="card-container">
+        <div class="card">
+            <h3 class="title" style="color:green">Start from where you left</h3>
+            <a  class="inline-btn" asp-action="MyLearning" asp-controller="Learner">Continue Learning</a>
+            <p>Total Courses: <span>20</span></p>
+            <a  class="inline-btn" asp-action="MyLearning" asp-controller="Learner">view courses</a>
+            <p>Todays Status: @{
+                if(@ViewBag.reportStatus == null){
+                    <span class="text-danger" style="font-size: 1.8rem;font-weight:bold;">Not Updated</span>
+                }
+                else if(@ViewBag.reportStatus == "InHold"){
+                    <span class="text-warning" style="font-size: 1.8rem;font-weight:bold;">@ViewBag.reportStatus</span>
+                }
+                else{
+                    <span class="text-success" style="font-size: 1.8rem;font-weight:bold;">@ViewBag.reportStatus</span>
+                }
+                    
+                
+            }
+            </p>
+            <a asp-action="StatusUpdate" asp-controller="Learner" class="inline-btn">Update Now</a>
+        </div>
+    
+        <div class="card">
+            <h3 class="title">top Categories</h3>
+            <div class="flex">
+                <a href="#"><i class="fas fa-code"></i><span>development</span></a>
+                <a href="#"><i class="fas fa-chart-simple"></i><span>business</span></a>
+                <a href="#"><i class="fas fa-pen"></i><span>UX/UI</span></a>
+                <a href="#"><i class="fas fa-chart-line"></i><span>marketing</span></a>
+                <a href="#"><i class="fas fa-music"></i><span>Banking</span></a>
+                <a href="#"><i class="fas fa-camera"></i><span>HR</span></a>
+                <a href="#"><i class="fas fa-cog"></i><span>software</span></a>
+                <a href="#"><i class="fas fa-vial"></i><span>Retail</span></a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <h3 class="title">Popular Domains</h3>
+            <div class="flex">
+                <a href="#"><i class="fab fa-html5"></i><span>HTML</span></a>
+                <a href="#"><i class="bi bi-microsoft"></i><span>.Net</span></a>
+                <a href="#"><i class="fab fa-js"></i><span>javascript</span></a>
+                <a href="#"><i class="bi bi-credit-card-2-front-fill"></i><span>react</span></a>
+                <a href="#"><i class="bi bi-android2"></i><span>Android</span></a>
+                <a href="#"><i class="bi bi-filetype-sql"></i><span>Oracle Fusion</span></a>
+            </div>
+        </div>
+    
+        @* <div class="card quiz-box">
+            <h3 class="title">Attempt Quiz Now</h3>
+            <p>You can attempt the quiz only once</p>
+            <a href="quiz.html" class="inline-btn">Get Started</a>
+        </div> *@
+    </div>
+
+</section>
+
+
+
+<!-- Categories section ending -->
+
+
+<!-- Courses Section Starts -->
+
+<section class="courses">
+    <h1 class="heading">Courses</h1>
+
+    <div class="course-container">
+        @{
+            foreach(var course in Model){
+                <div class="course-box">
+                    <div class="desc">
+                        <img src="../media/course-icon.jpg" alt="course img">
+                        <div>
+                            <h5 class="instructor">Name</h5>
+                            <p class="date">@course.StartDate</p>
+                        </div>
+                    </div>
+                    
+                    <div class="image-card-container">
+                        @{
+                            string imageBase64Data = Convert.ToBase64String(@course.PhotoPath);
+                            string imageDataURL = string.Format("data:image/jpg;base64,{0}", imageBase64Data);
+                        }
+                        <img src=@imageDataURL class="img-card" /><p class="notify">Access Denied</p>
+                    </div>
+                    <h2>@course.CourseName</h2>
+                </div>
+            }
+        }
+        @* <div class="course-box">
+            <div class="desc">
+                <img src="" alt="course img">
+                <div>
+                    <h5 class="instructor">Name</h5>
+                    <p class="date">11-11-2011</p>
+                </div>
+            </div>
+            <div class="image-card-container">
+                <img src="../media/admin.jpg" class="img-card" /><p class="notify">Access Denied</p>
+            </div>
+            <h2>Course name</h2>
+        </div>
+        <div class="course-box">
+            <div class="desc">
+                <img src="../media/admin.jpg" alt="course img">
+                <div>
+                    <h5 class="instructor">Name</h5>
+                    <p class="date">11-11-2011</p>
+                </div>
+            </div>
+            <div class="image-card-container">
+                <img src="../media/admin.jpg" class="img-card" /><p class="notify">Access Denied</p>
+            </div>
+            
+            <h2>Course name</h2>
+        </div>
+        <div class="course-box">
+            <div class="desc">
+                <img src="" alt="course img">
+                <div>
+                    <h5 class="instructor">Name</h5>
+                    <p class="date">11-11-2011</p>
+                </div>
+            </div>
+            <div class="image-card-container">
+                <img src="../media/admin.jpg" class="img-card" /><p class="notify">Access Denied</p>
+            </div>
+            <h2>Course name</h2>
+        </div>
+        <div class="course-box">
+            <div class="desc">
+                <img src="" alt="course img">
+                <div>
+                    <h5 class="instructor">Name</h5>
+                    <p class="date">11-11-2011</p>
+                </div>
+            </div>
+            <div class="image-card-container">
+                <img src="../media/admin.jpg" class="img-card" /><p class="notify">Access Denied</p>
+            </div>
+            <h2>Course name</h2>
+        </div>
+        <div class="course-box">
+            <div class="desc">
+                <img src="" alt="course img">
+                <div>
+                    <h5 class="instructor">Name</h5>
+                    <p class="date">11-11-2011</p>
+                </div>
+            </div>
+            <div class="image-card-container">
+                <img src="../media/admin.jpg" class="img-card" /><p class="notify">Access Denied</p>
+            </div>
+            <h2>Course name</h2>
+        </div> *@
+    </div>
+
+    <div class="final-sec"><a asp-action="MyLearning" asp-controller="Learner" class="inline-btn">Start Learning</a></div>
+
+</section>
+
+
+
+
+
+<!-- Courses Section ends -->
+
+
+
+
+<!-- <footer class="footer">
+
+    <span>all rights reserved  aspire systems</span>
+
+</footer> -->

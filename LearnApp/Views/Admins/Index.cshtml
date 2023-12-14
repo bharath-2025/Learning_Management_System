@@ -1,0 +1,39 @@
+
+
+@model IEnumerable<LearnApp.Models.Course>
+
+<!-- importing Admin Dashboard Partial -->
+
+<partial name="_AdminDashboard"></partial>
+
+<!-- Courses Section Starts -->
+
+<section class="courses">
+    <h1 class="heading">OUR COURSES</h1>
+
+    <div class="course-container">
+        @{
+            foreach(var course in Model){
+                <div class="course-box">
+                    <div class="desc">
+                        <img src="../media/course-icon.jpg" alt="course img">
+                        <div>
+                            <h5 class="instructor">@course.CourseName</h5>
+                            <p class="date">@course.StartDate</p>
+                        </div>
+                    </div>
+                    @* @{
+                        Console.WriteLine(@course.PhotoPath);
+                    } *@
+                    <div class="image-card-container">
+                        @{
+                            string imageBase64Data = Convert.ToBase64String(@course.PhotoPath);
+                            string imageDataURL = string.Format("data:image/jpg;base64,{0}", imageBase64Data);
+                        }
+                        <img src=@imageDataURL class="img-card" />
+                    </div>
+                </div>
+            }
+        }
+    </div>
+

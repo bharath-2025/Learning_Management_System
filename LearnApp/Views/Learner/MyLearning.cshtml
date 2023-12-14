@@ -1,0 +1,67 @@
+@model IEnumerable<LearnApp.Models.Course>
+
+<!-- Importing UserDashboard Partial View-->
+<partial name="_UserDashboard">
+
+<section class="my-learning">
+    <h1 class="heading">Your Courses</h1>
+    <div class="my-learning-container">
+        <div class="courses-card">
+            @{
+                foreach(var course in Model){
+                    <h3><a asp-action="DisplayFile" asp-controller="Learner" asp-route-id=@course.CourseId><i class="bi bi-arrow-up-right-circle-fill"></i>&nbsp;&nbsp;@course.CourseName</a></h3>
+                }
+            }
+           
+            @* <h3><i class="bi bi-arrow-up-right-circle-fill"></i>&nbsp;&nbsp;ASP.NET</h3>
+            <h3><i class="bi bi-arrow-up-right-circle-fill"></i>&nbsp;&nbsp;Angular</h3>
+            <h3><i class="bi bi-arrow-up-right-circle-fill"></i>&nbsp;&nbsp;ASP.NET MVC</h3> *@
+        </div>
+        <div class="courses-container">
+            @{
+                foreach(var course in Model){
+                    <div class="course-box">
+                        <h1>@course.CourseName</h1>
+                        @{
+                            string imageBase64Data = Convert.ToBase64String(@course.PhotoPath);
+                            string imageDataURL = string.Format("data:image/jpg;base64,{0}", imageBase64Data);
+                        }
+                        <div class="course-card" style="background-image: url(@imageDataURL);">
+                            
+                        </div>
+                        <a asp-action="Playlist" asp-controller="Learner" asp-route-coursename=@course.CourseName asp-route-courseid=@course.CourseId class="inline-btn">continue learing</a>
+                    </div>
+                }
+            }
+
+            @* <div class="course-box">
+                <h1>ASP.NET</h1>
+                <div class="course-card">
+                    
+                </div>
+                <button asp-action="Playlist" asp-controller="Learner" class="inline-btn">continue learing</button>
+            </div>
+            <div class="course-box">
+                <h1>Angular</h1>
+                <div class="course-card">
+                    
+                </div>
+                <button asp-action="Playlist" asp-controller="Learner" class="inline-btn">continue learing</button>
+            </div>
+            <div class="course-box">
+                <h1>MySQL</h1>
+                <div class="course-card">
+                    
+                </div>
+                <button asp-action="Playlist" asp-controller="Learner" class="inline-btn">continue learing</button>
+            </div>
+            <div class="course-box">
+                <h1>MySQL</h1>
+                <div class="course-card">
+                    
+                </div>
+                <button asp-action="Playlist" asp-controller="Learner" class="inline-btn">continue learing</button>
+            </div> *@
+        </div>
+    </div>
+</section>

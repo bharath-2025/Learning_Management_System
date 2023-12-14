@@ -1,0 +1,136 @@
+
+@model LearnApp.Models.Files;
+
+<!-- Importing AdminDashboard Partial View-->
+<partial name="_AdminDashboard">
+
+
+<div class="file-section">
+    <!-- Pills navs -->
+    <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+    <li class="nav-item" role="presentation">
+        <a
+        class="nav-link active"
+        id="tab-add"
+        data-mdb-toggle="pill"
+        href="#pills-login"
+        role="tab"
+        aria-controls="pills-login"
+        aria-selected="true"
+        onclick="addFunction()"
+        >Add Materials</a
+        >
+    </li>
+    <li class="nav-item" role="presentation">
+        <a
+        class="nav-link"
+        id="tab-edit"
+        data-mdb-toggle="pill"
+        href="#pills-register"
+        role="tab"
+        aria-controls="pills-register"
+        aria-selected="false"
+        onclick="viewFunction()"
+        >Edit</a
+        >
+    </li>
+    </ul>
+
+    <!-- Pills navs -->
+
+    <!-- Pills content -->
+    <div class="tab-content">
+    <div class="tab-pane fade show active" id="add-material" role="tabpanel" aria-labelledby="tab-login">
+        <form method="post" asp-action="ManageMaterials" asp-controller="Admins" enctype="multipart/form-data">
+
+        <!-- CourseId input -->
+        <div class="form-outline mb-4">
+            <input type="text" id="CourseId" class="form-control" asp-for="CourseId" required/>
+            <label class="form-label" for="CourseId">CourseId</label>
+        </div>
+
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+            <input type="text" id="name" class="form-control" asp-for="MaterialName" required />
+            <label class="form-label" for="name">Material Name</label>
+        </div>
+
+        <div class="form-outline mb-4">
+            <input type="file" id="material" class="form-control" asp-for="Material" required/>
+            <label class="form-label" for="material">Choose Material</label>
+        </div>
+
+
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4" style="height:4rem;width:10rem;font-size:1.5rem">Submit</button>
+        <span class="text-success" style="font-size:1.5rem;font-weight:bold;font-style=italic">@ViewBag.SubmitStatus</span>
+
+        <!-- Register buttons -->
+        <div class="text-center">
+            <p>View Materials? <a asp-action="ViewMaterials" asp-controller="Admins">View</a></p>
+        </div>
+        <span class="text-success" style="font-size:1.5rem;font-weight:bold;font-style=italic">@ViewBag.UpdateStatus</span>
+        </form>
+    </div>
+    
+    <div class="tab-pane fade" id="edit-material" role="tabpanel" aria-labelledby="tab-login">
+        <form method="post" asp-action="EditMaterials" asp-controller="Admins" enctype="multipart/form-data">
+
+        <!-- CourseId input -->
+        <div class="form-outline mb-4">
+            <input type="text" id="CourseId" class="form-control" asp-for="CourseId" required/>
+            <label class="form-label" for="CourseId">Enter CourseId</label>
+        </div>
+
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+            <input type="text" id="name" class="form-control" asp-for="MaterialName" required />
+            <label class="form-label" for="name">Enter Material Name</label>
+        </div>
+
+        <div class="form-outline mb-4">
+            <input type="file" id="material" class="form-control" asp-for="Material" required/>
+            <label class="form-label" for="material">Update Material</label>
+        </div>
+
+
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-warning btn-block mb-4" style="height:4rem;width:10rem;font-size:1.5rem">Update</button>
+        <span class="text-success" style="font-size:1.5rem;font-weight:bold;font-style=italic">@ViewBag.UpdateStatus</span>
+
+        <!-- Register buttons -->
+        <div class="text-center">
+            <p>View Materials? <a asp-action="ViewMaterials" asp-controller="Admins">View</a></p>
+        </div>
+        </form>
+    </div>
+    
+</div>
+
+
+
+<script>
+    var addmaterial = document.getElementById("tab-add");
+    var editmaterial = document.getElementById("tab-edit");
+    var addmaterialDiv = document.getElementById("add-material");
+    var editmaterialDiv = document.getElementById("edit-material");
+
+
+    function addFunction(){
+        console.log("Hello Add");
+        editmaterial.classList.remove("active");
+        addmaterial.classList.add("active");
+        addmaterialDiv.classList.add("show","active");
+        editmaterialDiv.classList.remove("show","active");
+    }
+
+    function viewFunction(){
+        console.log("Hello View");
+        addmaterial.classList.remove("active");
+        editmaterial.classList.add("active");
+        addmaterialDiv.classList.remove("show","active");
+        editmaterialDiv.classList.add("show","active");
+    }
+    
+</script>
+

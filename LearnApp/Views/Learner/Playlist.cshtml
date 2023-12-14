@@ -1,0 +1,40 @@
+
+@model LearnApp.Models.Course
+
+
+<!-- Importing UserDashboard Partial View-->
+@{
+    if(@ViewBag.role == "Learner"){
+        <partial name="_UserDashboard"></partial>
+    }
+    else if(@ViewBag.role == "Instructor"){
+        <partial name="_InstructorDashboard"></partial>
+    }
+}
+
+<section class="playlist">
+    <h1 class="heading"></h1>
+    <div class="video-container">
+        @{
+            string VideoBase64Data = Convert.ToBase64String(@Model.VideoPath);
+            string VideoDataURL = string.Format("data:video/mp4;base64,{0}", VideoBase64Data);
+        }
+        
+        <video src=@VideoDataURL class="video" controls auto></video>
+        <h2><i class="bi bi-book"></i>&nbsp;&nbsp;Complete Course @Model.CourseName Tutorial</h2>
+        <div class="info">
+            <p><i class="fas fa-calender"></i><span>@Model.StartDate</span></p>
+            @{
+                if(@ViewBag.role == "Learner"){
+                    <a class="inline-btn" asp-action="MyLearning" asp-controller="Learner">Back To Courses</a>
+                }
+                else if(@ViewBag.role == "Instructor"){
+                    <a class="inline-btn" asp-action="GetCourses" asp-controller="Instructor">Back To Courses</a>
+                }
+            }
+
+        </div>
+
+    </div>
+    
+</section>

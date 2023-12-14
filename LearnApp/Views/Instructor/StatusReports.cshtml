@@ -1,0 +1,52 @@
+
+@model IEnumerable<LearnApp.Models.StatusReport>
+
+<partial name="_instructorDashboard"/>
+
+<section class="report-container">
+    <h2 class="heading">Status Reports</h2>
+    <div class="table-div">
+        <table>
+        <thead>
+            <tr>
+            <th scope="col">ID</th>
+            <th scope="col">BatchId</th>
+            <th scope="col">UserId</th>
+            <th scope="col">UpdatedDate</th>
+            <th scope="col">Report</th>
+            <th scope="col">Accept Report</th>
+            <th scope="col">Delete Report</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach(var report in Model)
+                {
+                    <tr>
+                    @{
+                        if(report.ReportStatus == "Accepted"){
+                            <th scope="row" style="text-decoration: line-through;">@report.Id</th>
+                            <td style="text-decoration: line-through;">@report.BatchId</td>
+                            <td style="text-decoration: line-through;">@report.UserId</td>
+                            <td style="text-decoration: line-through;">@report.UpdatedDate</td>
+                            <td style="text-decoration: line-through;">@report.Message</td>
+                        }
+                        else if(report.ReportStatus == "InHold"){
+                            <th scope="row">@report.Id</th>
+                            <td >@report.BatchId</td>
+                            <td>@report.UserId</td>
+                            <td>@report.UpdatedDate</td>
+                            <td>@report.Message</td>
+                        }
+                    }
+                    <td><a asp-action="AcceptReport" asp-controller="Instructor" asp-route-id=@report.Id class="btn btn-success" style="font-size:1.5rem">Accept</a></td>
+                    <td><a asp-action="DeleteReport" asp-controller="Instructor" asp-route-id=@report.Id class="btn btn-danger" style="font-size:1.5rem">Delete</a></td>
+                    </tr>
+                }
+            }
+        </tbody>
+        </table>
+    </div>
+    
+</section>
+

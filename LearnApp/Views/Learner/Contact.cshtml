@@ -1,0 +1,53 @@
+@model LearnApp.Models.Query
+
+
+<!-- Importing UserDashboard Partial View-->
+<partial name="_UserDashboard"></partial>
+
+<!-- Contact section start -->
+
+<section class="contact">
+
+    <h1 class="heading">Contact Now</h1>
+
+    <div class="contact-container">
+        <div class="contact-image"></div>
+        <div class="contact-section">`
+            <form method="post">
+                <h3>Help Desk&nbsp;<i class="bi bi-chat-square-text"></i></h3>
+                <span class="text-success">@TempData["Notify"]</span>
+                
+                <input type="text" required class="input-box" asp-for="UserId" readonly value=@ViewBag.userid style="font-weight: bold;"><br>
+                <input type="text" placeholder="enter your email" required class="input-box" asp-for="Email" readonly value=@ViewBag.email style="font-weight: bold;"><br>
+                <textarea cols="30" rows="10" placeholder="enter your message" required class="text-box" asp-for="Message" style="font-weight: bold;"></textarea><br>
+                <button type="submit" value="Send Message" class="inline-btn">Send Message</button>
+            </form>
+            
+        </div>
+    </div>
+
+    <div class="contact-bar">
+        <div class="contact-card">
+            <h2><i class="bi bi-telephone-fill"></i></h2>
+            <h3>Phone number</h3>
+            <p><a href="tel:1234567890">1234567890</a></p>
+            <p><a href="tel:9999999999">9999999999</a></p>
+        </div>
+        <div class="contact-card">
+            <h2><i class="bi bi-envelope-fill"></i></h2>
+            <h3>Email</h3>
+            <p><a href="mailto:admin1@aspiresys.com">admin1@aspiresys.com</a></p>
+            <p><a href="helpdesk@aspiresys.com">helpdesk@aspiresys.com</a></p>
+        </div>
+        <div class="contact-card">
+            <h2><i class="bi bi-geo-alt-fill"></i></h2>
+            <h3>Adress</h3>
+            <p><a href="#">SIPCOIT - IT Park Sector1</a></p>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- Contact section End -->
+

@@ -1,0 +1,772 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;1,300;1,500;1,600&display=swap');
+
+:root{
+    
+    --main-color:#db346c;
+    --red:#e74c3c;
+    --orange:#e67e22;
+    --purple:#8e44ad;
+    --white:#fff;
+    --silver:#a3a5a7;
+    --black:#30455a;
+    --light-bg:#eee;
+    --border:.2rem solid rgba(0,0,0,.2);
+}
+
+
+*{
+    /* font-family: 'PT Serif', serif; */
+    font-family: 'Shantell Sans', cursive;
+    margin:0;padding:0;
+    box-sizing: border-box;
+    border:none;outline:none;
+    text-decoration: none;
+}
+
+*::selection{
+    background-color: green;
+    color:var(--white)
+}
+
+html{
+    font-size: 50%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--light-bg);
+    padding-left: 30rem;                /*For Side Bar*/
+}
+
+body.active{
+    padding-left:-0;
+}
+
+/*CSS for all the button types*/
+.option-btn,
+.delete-btn,
+.inline-btn,
+.inline-option-btn,
+.inline-delete-btn{
+    border-radius: .5rem;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color:var(--white);
+    text-transform: capitalize;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.option-btn:hover,
+.delete-btn:hover,
+.inline-btn:hover,
+.inline-option-btn:hover,
+.inline-delete-btn:hover{
+   color: var(--white);
+   background-color: var(--black);
+}
+
+
+.option-btn,
+.delete-btn{
+    display:block;
+}
+
+.inline-btn,
+.inline-option-btn,
+.inline-delete-btn{
+    display: inline-block;
+}
+
+.inline-btn{
+    background-color: var(--main-color);
+}
+
+.option-btn,.inline-option-btn{
+    background-color:var(--orange);
+}
+
+.delete-btn,.inline-delete-btn{
+    background-color: var(--red);
+}
+
+.heading{
+    padding-bottom: 1.7rem;
+    border-bottom:var(--border);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:var(--black);
+    margin-bottom: 2rem;
+}
+
+
+/*Header Section CSS*/
+
+section{
+    padding: 2rem;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.header{
+    background-color: var(--white);
+    border-bottom: var(--border);
+    position:sticky;
+    top:0;left:0;right:0;
+    z-index: 1000;
+}
+
+.header .flex{
+    display:flex;
+    padding:1.5rem 2rem;
+    position:relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .flex .logo{
+    font-style: italic;
+    font-size: 2.5rem;
+    color:var(--purple);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.header .flex .search-bar{
+    width:50rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    padding:1.5rem 2rem;
+    background-color: var(--light-bg);
+    gap: 1.5rem;
+}
+
+.header .flex .search-bar input{
+    width:100%;
+    background: none;
+    font-size: 2rem;
+    color:var(--black);
+}
+
+.header .flex .icons #search-btn{
+    display: none;
+}
+
+.header .flex .search-bar button{
+    font-size: 1.5rem;
+    color:var(--black);
+    cursor:pointer;
+    background: none;
+}
+
+.header .flex .search-bar button:hover{
+    color:var(--main-color);
+}
+
+.header .flex .icons div{
+    font-size: 2rem;
+    color:var(--black);
+    border-radius: .5rem;
+    height:4.5rem;
+    width:4.5rem;
+    cursor:pointer;
+    background-color: var(--light-bg);
+    line-height: 4.4rem;
+    margin-left:.5rem;
+    text-align: center;
+}
+
+.header .flex .icons div:hover{
+    color:var(--white);
+    background-color: var(--black);
+}
+
+.header .flex .profile{
+    position:absolute;
+    top:120%;right:2rem;
+    background-color: var(--white);
+    padding:2rem;
+    border-radius: .5rem;
+    width:20rem;
+    text-align: center;
+    transform: scale(0);
+    transition:.1s linear;
+}
+
+.header .flex .profile.active{
+    transform: scale(1);
+}
+
+.header .flex .profile img{
+    height:7rem;
+    width:7rem;
+    border-radius:50%;
+    margin-bottom:.5rem;
+}
+
+.header .flex .profile h3{
+    font-size:2rem;
+    color:var(--black);
+}
+
+.header .flex .profile a{
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.header .flex .profile span{
+    font-size: 1.3rem;
+    color:var(--purple);
+}
+
+.header ~.notify{
+    font-size: 2rem;
+    width:100%;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+}
+
+/*Side Bar Section*/
+
+.side-bar .close-side-bar{
+    text-align: right;
+    display: none;
+}
+
+.side-bar .close-side-bar i{
+    height:4rem;
+    width:4rem;
+    font-size: 2.3rem;
+    cursor:pointer;
+    color:red;
+    padding: 1rem;
+}
+
+.side-bar{
+    position: fixed;
+    top:0;left:0;bottom:0;
+    height:100vh;
+    width:30rem;
+    background-color: var(--white);
+    border-right: var(--border);
+    z-index: 1200;
+    transition: .2s linear;
+}
+
+.side-bar .profile{
+    padding:1rem 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-bar .profile img{
+    height:7rem;
+    width:7rem;
+    border-radius:100%;
+    margin-bottom:.5rem;
+}
+
+.side-bar .profile h3{
+    font-size:2rem;
+    color:var(--black);
+}
+
+.side-bar .profile span{
+    font-size: 1.5rem;
+    color:var(--purple);
+    font-weight: bold;
+}
+
+.side-bar .menu{
+    margin-top: 2.5rem;
+}
+
+.side-bar .menu a{
+    display: block;
+    padding: 1.3rem;
+    margin: 1rem 0;
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.side-bar .menu a i{
+    color:black;
+    font-size: 2.5rem;
+    margin-right: 2rem;
+    transition: .2s linear;
+}
+
+.side-bar .menu a span{
+    color: var(--silver);
+}
+
+.side-bar .menu a:hover{
+    background-color: var(--light-bg);
+}
+
+.side-bar .menu a:hover i{
+    margin-right:2.5rem;
+}
+
+.side-bar.active{
+    left:-31rem;
+}
+
+.categories .card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    gap:1.5rem;
+}
+
+
+.categories .card-container .card{
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: .6rem;
+    box-shadow: 0px 0px 10px 0px #8888;
+    max-width: 30rem;
+}
+
+.categories .card-container .card .title{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    color:var(--black);
+}
+
+.categories .card-container .card p{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color:var(--silver);
+}
+
+.categories .card-container .card p span{
+    color:black;
+}
+
+.categories .card-container .quiz-box{
+    text-align: center;
+}
+
+.categories .card-container .card.quiz-box p{
+    padding-bottom: 1.5rem;
+}
+
+.categories .card-container .card .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    padding-top:1.5rem
+}
+
+.categories .card-container .card .flex a{
+    font-size: 1.5rem;
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+    padding:1rem 1.5rem;
+    text-decoration: none;
+}
+
+.categories .card-container .card .flex a i{
+    margin-right: 1rem;
+    color:var(--black);
+}
+
+.categories .card-container .card .flex a span{
+    color:var(--silver);
+}
+
+.categories .card-container .card .flex a:hover{
+    background-color: var(--black);
+}
+
+.categories .card-container .card .flex a:hover i{
+    color:var(--white);
+}
+
+.categories .card-container .card .flex a:hover span{
+    color: var(--white);
+}
+
+
+
+/*Courses Section*/
+
+.courses .course-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap:2rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.courses .course-box{
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: .6rem;
+    box-shadow: 0px 0px 10px 0px #8888;
+}
+
+.courses .course-box .desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.courses .course-box .desc img{
+    border-radius: 100%;
+    margin-right: 2rem;
+    width:5rem;
+    height:5rem;
+    object-fit:cover;
+}
+
+.courses .course-box .desc div .instructor{
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: bold;
+    color:var(--black)
+}
+
+.courses .course-box .desc div .date{
+    font-size: 1.4rem;
+    color:var(--silver)
+}
+
+.courses .course-box .image-card-container{
+    position: relative;
+}
+
+.courses .course-box .image-card-container .img-card{
+    width:100%;
+    height:22rem;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+    z-index:1000;
+}
+
+.courses .course-box h2{
+    font-size: 2rem;
+    color:var(--black);
+    font-size: italic;
+    font-weight: bolder;
+}
+
+.course-box .image-card-container .notify{
+    position:absolute;
+    font-size: 2.5rem;
+    color:var(--white);
+    font-size: italic;
+    font-weight: bolder;
+    bottom:40%;left:24%;
+    visibility: hidden;
+}
+
+.course-box .image-card-container:hover{
+    opacity: 0.7;
+}
+
+.course-box .image-card-container:hover .notify{
+    visibility: visible;
+}
+
+.courses .final-sec{
+
+    text-align: center;
+    margin:2rem auto;
+}
+
+
+
+/* Learning Section*/
+
+.my-learning .my-learning-container{
+    width:100%;
+}
+
+.my-learning .my-learning-container .courses-card{
+    width:30rem;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: .6rem;
+    box-shadow: 0px 0px 10px 0px #8888;
+    margin:2rem;
+}
+
+.my-learning .my-learning-container .courses-card h3{
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+    margin:.8rem;
+    cursor:pointer;
+}
+
+.my-learning .my-learning-container .courses-card h3:hover{
+    color:var(--main-color);
+}
+
+.my-learning .my-learning-container .courses-container{
+    width:100%;
+    font-style: italic;
+    display: flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+    justify-content: space-around;
+}
+
+.my-learning .my-learning-container .courses-container .course-box{
+    width:35rem;
+    height: 31rem;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: .6rem;
+    box-shadow: 0px 0px 10px 0px #8888;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin:1rem;
+}
+
+.my-learning .my-learning-container .courses-container .course-box h1{
+    font-size:2.3rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.my-learning .my-learning-container .courses-container .course-box .course-card{
+    width:90%;
+    height:60%;
+    border:var(--border);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Playlist Section*/
+
+.playlist .video-container{
+    display: flex;
+    flex-direction: column;
+    padding:2.5rem;
+}
+
+.playlist .video-container video{
+    width:80%;
+    height:55rem;
+    border-radius: .6rem;
+    margin:1.5rem auto;
+    box-shadow: 0px 0px 10px 0px #222;
+}
+
+.playlist .video-container h2{
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+}
+
+.playlist .video-container .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2rem;
+}
+
+.playlist .video-container .info p{
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+    color:var(--main-color);
+}
+
+
+/*Status Reports Section*/
+
+.report-container .table-div{
+    width:100%;
+    border:2px solid black;
+}
+
+.report-container .table-div table{
+    width:100%;
+    border-radius: .6rem;
+    box-shadow: 0px 0px 10px 0px #8888;
+    background-color: white;
+}
+
+
+.report-container table thead{
+    height:7rem;
+    font-size: 2rem;
+    font-style: italic;
+   text-align: center;
+}
+
+
+
+.report-container table tbody{
+    height:5rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.report-container table td,th{
+    padding: 2rem;
+}
+
+
+/* Profile Section */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+    border:2px solid black;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+      padding:2rem;
+    background-color: var(--white);
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30rem;
+    height:30rem;
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+
+
+/*Media Queries*/
+/*media Queries section*/
+
+@media (max-width:1024px){
+    html{
+        font-size: 45%;
+    }
+    body{
+        padding-left: 0;
+    }
+    .side-bar{
+        transition: .2s linear;
+        left:-30rem;
+    }
+
+    .side-bar.active{
+        left:0;
+        box-shadow: 0 0 0 100vw rgba(0,0,0,.5);
+    }
+    .side-bar .close-side-bar{
+        display: inline-block;
+    }
+    #user-btn{
+        display: none;
+    }
+}
+
+@media (max-width:832px){
+
+    .header .flex .search-bar{
+        position:absolute;
+        left:0;right:0;top:99%;
+        width:auto;
+        border-top: var(--border);
+        border-bottom: var(--border);
+        background-color: var(--white);
+        transform: scale(0);
+        transition: .2s ease-in-out;
+    }
+
+    .header .flex .icons #search-btn{
+        display: inline-block;
+    }
+    
+    .header .flex .search-bar.active{
+        transform: scale(1);
+    }
+
+    
+    
+}
+
+@media (max-width:410px){
+    html{
+        font-size: 45%;
+    }
+}
+
+
+@media (max-width:370px){
+    html{
+        font-size: 30%;
+    }
+}
+
+
+
+
+
+

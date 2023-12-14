@@ -1,0 +1,130 @@
+@model IEnumerable<ApplicationUser>
+@using LearnApp.Enums;
+
+@{
+    Pager pager = new Pager();
+    int pageNo = 0;
+    if(ViewBag.Pager != null){
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
+
+<link rel="stylesheet" href="~/css/AccountStyles.css">
+
+<partial name="_AdminDashboard" />
+
+<div class="Entire-page">
+    <section class="manage-learners">
+
+        <h2 style="font-weight:bold"> USERS LIST </h2>
+            <form method="get" asp-action="manageLearners" asp-controller="Admins">
+                <div class="box flex">
+                    <div class="flex-1">
+                        <select class="form-select" name="searchBy">
+
+                            <option value="PersonName">PersonName</option>
+                            <option value="UserName">UserName</option>
+                            <option value="Email">Email</option>
+                            <option value="BatchId">Batch</option>
+
+
+                        </select>
+                    </div>
+                    <div class="flex-1">
+                        <input type="search" id="Search" class="form-input" name="searchString" placeholder="Search" />
+                    </div>
+                    <div class="flex-1">
+                        <button class="button button-blue-black" type="submit">Search</button>
+                        <a asp-action="manageLearners" asp-controller="Admins" class="link-hover">Show All</a>
+                    </div>
+                </div>
+            </form>
+
+            <br>
+
+            <table class="table w-100 mt">
+
+                <thead>
+                    <tr>
+                        <th>UserId</th>
+                        <th>PersonName</th>
+                        <th>Email</th>
+                        <th>Batch</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @foreach (var user in Model)
+                    {
+                        <tr>
+                            <td>@user.UserName</td>
+                            <td>@user.PersonName</td>
+                            <td>@user.Email</td>
+                            <td>@user.BatchId</td>
+                            <td>
+                                @if(@user.UserName != "ADM001"){
+                                    <form asp-action="DeleteUser" asp-controller="Admins" asp-route-username=@user.UserName>
+                                        <button type="submit" class="btn btn-danger" style="font-size:1.5rem;color:black;font-weight:bold">Delete</button>
+                                    </form>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+
+            </table>
+
+
+
+
+
+    </section>
+    <div class="container">
+       
+        @if(pager.TotalPages > 0){
+            <ul class="pagination justify-content-end">
+                @* For First and Preivious pages *@
+
+                @if(pager.CurrentPage > 1){
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="Admins" asp-action="manageLearners" asp-route-page="1">First</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="Admins" asp-action="manageLearners" asp-route-page="@(pager.CurrentPage - 1)"><i class="fa-solid fa-caret-left"></i></a>
+                    </li>
+                }
+
+                @* For current pages *@
+
+                @for(var pg = pager.StartPage ; pg <= pager.EndPage ; pg++){
+                    <li class="page-item @(pg == pager.CurrentPage ? "active" : "" )">
+                        <a class="page-link" asp-controller="Admins" asp-action="manageLearners" asp-route-page="@pg">@pg</a>
+                    </li>
+                }
+
+                @* for next and last pages *@
+
+                @if(pager.CurrentPage < pager.TotalPages){
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="Admins" asp-action="manageLearners" asp-route-page="@(pager.CurrentPage + 1)"><i class="fa-solid fa-caret-right"></i></a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" asp-controller="Admins" asp-action="manageLearners" asp-route-page="@(pager.TotalPages)">Last</a>
+                    </li>
+                }
+            </ul>
+        }
+
+    </div>
+    <span class="text-success" style="font-size:1.5rem;font-weight:bold">@ViewBag.Notify</span>
+    <a asp-action="Register" asp-controller="Account">Register a new user</a>
+
+    <div asp-validation-summary="All">
+
+    </div>
+</div>
+
+
+
