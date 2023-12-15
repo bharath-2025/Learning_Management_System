@@ -9,133 +9,133 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LearnApp
 build_property.RootNamespace = LearnApp
-build_property.ProjectDir = f:\Aspire\Learning_Management_System\LearnApp (1)\
+build_property.ProjectDir = f:\Aspire\Learning_Management_System\LearnApp\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = f:\Aspire\Learning_Management_System\LearnApp (1)
+build_property.MSBuildProjectDirectory = f:\Aspire\Learning_Management_System\LearnApp
 build_property._RazorSourceGeneratorDebug = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Account/Register.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Admins/CreateCourse.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Admins/CreateCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXENyZWF0ZUNvdXJzZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Admins/Index.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Admins/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Admins/manageCourses.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Admins/manageCourses.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXG1hbmFnZUNvdXJzZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Admins/manageInstructors.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Admins/manageInstructors.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXG1hbmFnZUluc3RydWN0b3JzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Admins/manageLearners.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Admins/manageLearners.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXG1hbmFnZUxlYXJuZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Admins/ManageMaterials.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Admins/ManageMaterials.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXE1hbmFnZU1hdGVyaWFscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Admins/ViewMaterials.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Admins/ViewMaterials.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXFZpZXdNYXRlcmlhbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Admins/ViewQueries.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Admins/ViewQueries.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXFZpZXdRdWVyaWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Home/HelpDesk.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Home/HelpDesk.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIZWxwRGVzay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Home/Index.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Home/SignIn.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Home/SignIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWduSW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Instructor/GetCourses.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Instructor/GetCourses.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxHZXRDb3Vyc2VzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Instructor/Index.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Instructor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Instructor/StatusReports.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Instructor/StatusReports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxTdGF0dXNSZXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Learner/Contact.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Learner/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lclxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Learner/DisplayFile.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Learner/DisplayFile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lclxEaXNwbGF5RmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Learner/Index.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Learner/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Learner/Leave.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Learner/Leave.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lclxMZWF2ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Learner/MyLearning.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Learner/MyLearning.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lclxNeUxlYXJuaW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Learner/Playlist.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Learner/Playlist.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lclxQbGF5bGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Learner/SearchCourse.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Learner/SearchCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lclxTZWFyY2hDb3Vyc2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Learner/StatusUpdate.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Learner/StatusUpdate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lclxTdGF0dXNVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/QueriesAPI/ViewQueries.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/QueriesAPI/ViewQueries.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlcmllc0FQSVxWaWV3UXVlcmllcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Shared/_AdminDashboard.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Shared/_AdminDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkRhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Shared/_InstructorDashboard.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Shared/_InstructorDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JbnN0cnVjdG9yRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Shared/_UserDashboard.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Shared/_UserDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Shared/_ValidationScriptsPartial.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/_ViewImports.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/_ViewStart.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[f:/Aspire/Learning_Management_System/LearnApp (1)/Views/Shared/_Layout.cshtml]
+[f:/Aspire/Learning_Management_System/LearnApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-shq9cjgv8s

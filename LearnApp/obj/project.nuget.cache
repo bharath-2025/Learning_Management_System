@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dSnur3wZOczQ6aSYz/ieMhnc3Oa4DO9T+gott/mxgfMVinByWy1rUtstjiO5N9W5+0uIskvLahZd+ADk2Xex2w==",
+  "dgSpecHash": "6rZDgVc7UsjkabO37DO7g3DXAUjjSSbwAaiAUgPapxUQSsAE9fZYf6fnwnR2wL0JtraNfvsnICOSbDJqBctrlg==",
   "success": true,
-  "projectFilePath": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\LearnApp.csproj",
+  "projectFilePath": "F:\\Aspire\\Learning_Management_System\\LearnApp\\LearnApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bharath2025\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Bharath2025\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

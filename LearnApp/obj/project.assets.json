@@ -5689,11 +5689,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\LearnApp.csproj",
+      "projectUniqueName": "F:\\Aspire\\Learning_Management_System\\LearnApp\\LearnApp.csproj",
       "projectName": "LearnApp",
-      "projectPath": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\LearnApp.csproj",
+      "projectPath": "F:\\Aspire\\Learning_Management_System\\LearnApp\\LearnApp.csproj",
       "packagesPath": "C:\\Users\\Bharath2025\\.nuget\\packages\\",
-      "outputPath": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\obj\\",
+      "outputPath": "F:\\Aspire\\Learning_Management_System\\LearnApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

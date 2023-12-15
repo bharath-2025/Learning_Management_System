@@ -1,379 +1,379 @@
 {
   "Files": [
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\LearnApp.bundle.scp.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\LearnApp.bundle.scp.css",
       "PackagePath": "staticwebassets\\LearnApp.bundle.scp.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\css\\AccountStyles.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\css\\AccountStyles.css",
       "PackagePath": "staticwebassets\\css\\AccountStyles.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\css\\UserDashboard.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\css\\UserDashboard.css",
       "PackagePath": "staticwebassets\\css\\UserDashboard.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\css\\adminDashboard.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\css\\adminDashboard.css",
       "PackagePath": "staticwebassets\\css\\adminDashboard.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\css\\home.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\css\\instructorDashboard.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\css\\instructorDashboard.css",
       "PackagePath": "staticwebassets\\css\\instructorDashboard.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\css\\site.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\favicon.ico",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\js\\dashboard.js",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\js\\dashboard.js",
       "PackagePath": "staticwebassets\\js\\dashboard.js"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\js\\site.js",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\admin.jpg",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\admin.jpg",
       "PackagePath": "staticwebassets\\media\\admin.jpg"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\adoDotnet.jpg",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\adoDotnet.jpg",
       "PackagePath": "staticwebassets\\media\\adoDotnet.jpg"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\angular.jpg",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\angular.jpg",
       "PackagePath": "staticwebassets\\media\\angular.jpg"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\aspire-logo.png",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\aspire-logo.png",
       "PackagePath": "staticwebassets\\media\\aspire-logo.png"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\course-icon.jpg",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\course-icon.jpg",
       "PackagePath": "staticwebassets\\media\\course-icon.jpg"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\css.png",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\css.png",
       "PackagePath": "staticwebassets\\media\\css.png"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\dotnet.jpg",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\dotnet.jpg",
       "PackagePath": "staticwebassets\\media\\dotnet.jpg"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\helpdesk.png",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\helpdesk.png",
       "PackagePath": "staticwebassets\\media\\helpdesk.png"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\helpdesk.svg",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\helpdesk.svg",
       "PackagePath": "staticwebassets\\media\\helpdesk.svg"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\html.jpg",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\html.jpg",
       "PackagePath": "staticwebassets\\media\\html.jpg"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\html.mp4",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\html.mp4",
       "PackagePath": "staticwebassets\\media\\html.mp4"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\java.jpg",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\java.jpg",
       "PackagePath": "staticwebassets\\media\\java.jpg"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\java_tutorial.pdf",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\java_tutorial.pdf",
       "PackagePath": "staticwebassets\\media\\java_tutorial.pdf"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\javascript.mp4",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\javascript.mp4",
       "PackagePath": "staticwebassets\\media\\javascript.mp4"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\login.jpg",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\login.jpg",
       "PackagePath": "staticwebassets\\media\\login.jpg"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\login.png",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\login.png",
       "PackagePath": "staticwebassets\\media\\login.png"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\logincard.jpg",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\logincard.jpg",
       "PackagePath": "staticwebassets\\media\\logincard.jpg"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\logo.jpg",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\logo.jpg",
       "PackagePath": "staticwebassets\\media\\logo.jpg"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\mvc.png",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\mvc.png",
       "PackagePath": "staticwebassets\\media\\mvc.png"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\oracle.webp",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\oracle.webp",
       "PackagePath": "staticwebassets\\media\\oracle.webp"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\python.jpg",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\python.jpg",
       "PackagePath": "staticwebassets\\media\\python.jpg"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\python.png",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\python.png",
       "PackagePath": "staticwebassets\\media\\python.png"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\react.mp4",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\react.mp4",
       "PackagePath": "staticwebassets\\media\\react.mp4"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\react.png",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\react.png",
       "PackagePath": "staticwebassets\\media\\react.png"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\sql.jpg",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\sql.jpg",
       "PackagePath": "staticwebassets\\media\\sql.jpg"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\sql.mp4",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\sql.mp4",
       "PackagePath": "staticwebassets\\media\\sql.mp4"
     },
     {
-      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp (1)\\wwwroot\\media\\webdev.mp4",
+      "Id": "F:\\Aspire\\Learning_Management_System\\LearnApp\\wwwroot\\media\\webdev.mp4",
       "PackagePath": "staticwebassets\\media\\webdev.mp4"
     },
     {

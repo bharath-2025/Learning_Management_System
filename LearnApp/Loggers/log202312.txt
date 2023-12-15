@@ -378,3 +378,487 @@ WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
 2023-12-13 23:30:59.248 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
 2023-12-13 23:30:59.248 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.3150ms
 2023-12-13 23:31:10.750 +05:30 [INF] Application is shutting down...
+2023-12-14 19:36:44.847 +05:30 [INF] Log Message - Info
+2023-12-14 19:36:44.883 +05:30 [WRN] Log Message - Warning
+2023-12-14 19:36:44.884 +05:30 [ERR] Log Message - Error
+2023-12-14 19:36:44.884 +05:30 [FTL] Log Message - Critical
+2023-12-14 19:36:45.121 +05:30 [INF] User profile is available. Using 'C:\Users\Bharath2025\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-14 19:36:45.203 +05:30 [INF] Now listening on: http://localhost:5114
+2023-12-14 19:36:45.203 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-14 19:36:45.203 +05:30 [INF] Hosting environment: Development
+2023-12-14 19:36:45.203 +05:30 [INF] Content root path: F:\Aspire\Learning_Management_System\LearnApp
+2023-12-14 19:36:45.579 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/ - -
+2023-12-14 19:36:45.614 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-12-14 19:36:45.716 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.HomeController.Index (LearnApp)'
+2023-12-14 19:36:45.767 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LearnApp.Controllers.HomeController (LearnApp).
+2023-12-14 19:36:46.218 +05:30 [INF] Home Page action method is reached
+2023-12-14 19:36:46.236 +05:30 [INF] Executing ViewResult, running view Index.
+2023-12-14 19:36:46.456 +05:30 [INF] Executed ViewResult - view Index executed in 231.5162ms.
+2023-12-14 19:36:46.460 +05:30 [INF] Executed action LearnApp.Controllers.HomeController.Index (LearnApp) in 691.8517ms
+2023-12-14 19:36:46.460 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.HomeController.Index (LearnApp)'
+2023-12-14 19:36:46.467 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/ - - - 200 - text/html;+charset=utf-8 895.5003ms
+2023-12-14 19:36:46.518 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:36:46.523 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 4.4509ms
+2023-12-14 19:36:58.955 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5114/ application/x-www-form-urlencoded 221
+2023-12-14 19:36:58.960 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.HomeController.Index (LearnApp)'
+2023-12-14 19:36:58.990 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(LearnApp.Models.LoginDTO) on controller LearnApp.Controllers.HomeController (LearnApp).
+2023-12-14 19:36:59.040 +05:30 [INF] Home Page action method loginDTO is posted
+2023-12-14 19:37:01.491 +05:30 [INF] Executed DbCommand (93ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BatchId], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-12-14 19:37:01.868 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-12-14 19:37:01.914 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-12-14 19:37:01.929 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-12-14 19:37:01.969 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-12-14 19:37:01.979 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-12-14 19:37:01.987 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BatchId], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-12-14 19:37:02.003 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2023-12-14 19:37:02.053 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid), @__get_Item_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__get_Item_0 AND [a].[RoleId] = @__get_Item_1
+2023-12-14 19:37:02.056 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2023-12-14 19:37:02.058 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid), @__get_Item_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__get_Item_0 AND [a].[RoleId] = @__get_Item_1
+2023-12-14 19:37:02.064 +05:30 [INF] Executing RedirectResult, redirecting to /Learner.
+2023-12-14 19:37:02.066 +05:30 [INF] Executed action LearnApp.Controllers.HomeController.Index (LearnApp) in 3075.5742ms
+2023-12-14 19:37:02.066 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.HomeController.Index (LearnApp)'
+2023-12-14 19:37:02.080 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5114/ application/x-www-form-urlencoded 221 - 302 0 - 3124.7766ms
+2023-12-14 19:37:02.080 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/Learner - -
+2023-12-14 19:37:02.100 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.LearnerController.Index (LearnApp)'
+2023-12-14 19:37:02.103 +05:30 [INF] Route matched with {action = "Index", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LearnApp.Controllers.LearnerController (LearnApp).
+2023-12-14 19:37:02.838 +05:30 [INF] Executing ViewResult, running view Index.
+2023-12-14 19:37:02.920 +05:30 [INF] Executed ViewResult - view Index executed in 82.469ms.
+2023-12-14 19:37:02.922 +05:30 [INF] Executed action LearnApp.Controllers.LearnerController.Index (LearnApp) in 819.1646ms
+2023-12-14 19:37:02.922 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.LearnerController.Index (LearnApp)'
+2023-12-14 19:37:02.923 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/Learner - - - 200 - text/html;+charset=utf-8 843.0677ms
+2023-12-14 19:37:02.930 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:37:02.932 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 1.8598ms
+2023-12-14 19:37:28.784 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/Learner/MyLearning - -
+2023-12-14 19:37:28.791 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.LearnerController.MyLearning (LearnApp)'
+2023-12-14 19:37:28.798 +05:30 [INF] Route matched with {action = "MyLearning", controller = "Learner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MyLearning() on controller LearnApp.Controllers.LearnerController (LearnApp).
+2023-12-14 19:37:28.878 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BatchId], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-12-14 19:37:28.961 +05:30 [INF] Executing ViewResult, running view MyLearning.
+2023-12-14 19:37:28.979 +05:30 [INF] Executed ViewResult - view MyLearning executed in 19.8158ms.
+2023-12-14 19:37:28.980 +05:30 [INF] Executed action LearnApp.Controllers.LearnerController.MyLearning (LearnApp) in 181.3854ms
+2023-12-14 19:37:28.980 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.LearnerController.MyLearning (LearnApp)'
+2023-12-14 19:37:28.981 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/Learner/MyLearning - - - 200 - text/html;+charset=utf-8 196.9171ms
+2023-12-14 19:37:28.997 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:37:28.997 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.3634ms
+2023-12-14 19:37:31.666 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/Learner/DisplayFile/CUR101 - -
+2023-12-14 19:37:31.680 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.LearnerController.DisplayFile (LearnApp)'
+2023-12-14 19:37:31.686 +05:30 [INF] Route matched with {action = "DisplayFile", controller = "Learner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayFile(System.String) on controller LearnApp.Controllers.LearnerController (LearnApp).
+2023-12-14 19:37:31.712 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BatchId], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-12-14 19:37:31.718 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2023-12-14 19:37:31.721 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid), @__get_Item_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__get_Item_0 AND [a].[RoleId] = @__get_Item_1
+2023-12-14 19:37:31.787 +05:30 [INF] Executing ViewResult, running view DisplayFile.
+2023-12-14 19:37:31.812 +05:30 [INF] Executed ViewResult - view DisplayFile executed in 26.4163ms.
+2023-12-14 19:37:31.832 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:37:32.084 +05:30 [INF] Executed action LearnApp.Controllers.LearnerController.DisplayFile (LearnApp) in 397.9221ms
+2023-12-14 19:37:32.084 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.LearnerController.DisplayFile (LearnApp)'
+2023-12-14 19:37:32.084 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 251.4972ms
+2023-12-14 19:37:32.084 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/Learner/DisplayFile/CUR101 - - - 200 - text/html;+charset=utf-8 418.7716ms
+2023-12-14 19:37:35.399 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/Learner/StatusUpdate - -
+2023-12-14 19:37:35.400 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.LearnerController.StatusUpdate (LearnApp)'
+2023-12-14 19:37:35.404 +05:30 [INF] Route matched with {action = "StatusUpdate", controller = "Learner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StatusUpdate() on controller LearnApp.Controllers.LearnerController (LearnApp).
+2023-12-14 19:37:35.411 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BatchId], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-12-14 19:37:35.418 +05:30 [INF] Executing ViewResult, running view StatusUpdate.
+2023-12-14 19:37:35.466 +05:30 [INF] Executed ViewResult - view StatusUpdate executed in 49.1711ms.
+2023-12-14 19:37:35.466 +05:30 [INF] Executed action LearnApp.Controllers.LearnerController.StatusUpdate (LearnApp) in 61.3096ms
+2023-12-14 19:37:35.466 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.LearnerController.StatusUpdate (LearnApp)'
+2023-12-14 19:37:35.466 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/Learner/StatusUpdate - - - 200 - text/html;+charset=utf-8 67.7397ms
+2023-12-14 19:37:35.596 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:37:35.596 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.2305ms
+2023-12-14 19:37:37.235 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/Learner/Contact - -
+2023-12-14 19:37:37.237 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.LearnerController.Contact (LearnApp)'
+2023-12-14 19:37:37.242 +05:30 [INF] Route matched with {action = "Contact", controller = "Learner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Contact() on controller LearnApp.Controllers.LearnerController (LearnApp).
+2023-12-14 19:37:37.250 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BatchId], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-12-14 19:37:37.258 +05:30 [INF] Executing ViewResult, running view Contact.
+2023-12-14 19:37:37.283 +05:30 [INF] Executed ViewResult - view Contact executed in 26.7928ms.
+2023-12-14 19:37:37.283 +05:30 [INF] Executed action LearnApp.Controllers.LearnerController.Contact (LearnApp) in 40.6884ms
+2023-12-14 19:37:37.283 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.LearnerController.Contact (LearnApp)'
+2023-12-14 19:37:37.284 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/Learner/Contact - - - 200 - text/html;+charset=utf-8 48.1760ms
+2023-12-14 19:37:37.302 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:37:37.303 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.2109ms
+2023-12-14 19:37:42.727 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5114/Learner/Search application/x-www-form-urlencoded 238
+2023-12-14 19:37:42.728 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.LearnerController.Search (LearnApp)'
+2023-12-14 19:37:42.734 +05:30 [INF] Route matched with {action = "Search", controller = "Learner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Search(Microsoft.AspNetCore.Http.IFormCollection) on controller LearnApp.Controllers.LearnerController (LearnApp).
+2023-12-14 19:37:42.744 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BatchId], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-12-14 19:37:42.753 +05:30 [INF] Executing RedirectResult, redirecting to /Learner/MyLearning.
+2023-12-14 19:37:42.760 +05:30 [INF] Executed action LearnApp.Controllers.LearnerController.Search (LearnApp) in 25.2985ms
+2023-12-14 19:37:42.760 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.LearnerController.Search (LearnApp)'
+2023-12-14 19:37:42.760 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5114/Learner/Search application/x-www-form-urlencoded 238 - 302 0 - 33.8297ms
+2023-12-14 19:37:42.765 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/Learner/MyLearning - -
+2023-12-14 19:37:42.766 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.LearnerController.MyLearning (LearnApp)'
+2023-12-14 19:37:42.766 +05:30 [INF] Route matched with {action = "MyLearning", controller = "Learner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MyLearning() on controller LearnApp.Controllers.LearnerController (LearnApp).
+2023-12-14 19:37:42.767 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BatchId], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-12-14 19:37:42.829 +05:30 [INF] Executing ViewResult, running view MyLearning.
+2023-12-14 19:37:42.837 +05:30 [INF] Executed ViewResult - view MyLearning executed in 8.2235ms.
+2023-12-14 19:37:42.837 +05:30 [INF] Executed action LearnApp.Controllers.LearnerController.MyLearning (LearnApp) in 71.3266ms
+2023-12-14 19:37:42.837 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.LearnerController.MyLearning (LearnApp)'
+2023-12-14 19:37:42.838 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/Learner/MyLearning - - - 200 - text/html;+charset=utf-8 72.7862ms
+2023-12-14 19:37:42.857 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:37:42.858 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.6962ms
+2023-12-14 19:37:50.572 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/Learner/Playlist?coursename=ASP.Net&courseid=CUR101 - -
+2023-12-14 19:37:50.573 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.LearnerController.Playlist (LearnApp)'
+2023-12-14 19:37:50.578 +05:30 [INF] Route matched with {action = "Playlist", controller = "Learner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Playlist(System.String, System.String) on controller LearnApp.Controllers.LearnerController (LearnApp).
+2023-12-14 19:37:50.592 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BatchId], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-12-14 19:37:50.599 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2023-12-14 19:37:50.605 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Guid), @__get_Item_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__get_Item_0 AND [a].[RoleId] = @__get_Item_1
+2023-12-14 19:37:50.622 +05:30 [INF] Executing ViewResult, running view Playlist.
+2023-12-14 19:37:50.682 +05:30 [INF] Executed ViewResult - view Playlist executed in 60.9414ms.
+2023-12-14 19:37:50.682 +05:30 [INF] Executed action LearnApp.Controllers.LearnerController.Playlist (LearnApp) in 103.7024ms
+2023-12-14 19:37:50.682 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.LearnerController.Playlist (LearnApp)'
+2023-12-14 19:37:50.682 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/Learner/Playlist?coursename=ASP.Net&courseid=CUR101 - - - 200 - text/html;+charset=utf-8 110.1401ms
+2023-12-14 19:37:50.697 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:37:50.698 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.2808ms
+2023-12-14 19:37:59.947 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/Learner/MyLearning - -
+2023-12-14 19:37:59.948 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.LearnerController.MyLearning (LearnApp)'
+2023-12-14 19:37:59.948 +05:30 [INF] Route matched with {action = "MyLearning", controller = "Learner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MyLearning() on controller LearnApp.Controllers.LearnerController (LearnApp).
+2023-12-14 19:37:59.950 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BatchId], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-12-14 19:38:00.045 +05:30 [INF] Executing ViewResult, running view MyLearning.
+2023-12-14 19:38:00.050 +05:30 [INF] Executed ViewResult - view MyLearning executed in 5.2959ms.
+2023-12-14 19:38:00.051 +05:30 [INF] Executed action LearnApp.Controllers.LearnerController.MyLearning (LearnApp) in 102.916ms
+2023-12-14 19:38:00.052 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.LearnerController.MyLearning (LearnApp)'
+2023-12-14 19:38:00.053 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/Learner/MyLearning - - - 200 - text/html;+charset=utf-8 105.2430ms
+2023-12-14 19:38:00.079 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:38:00.079 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.1808ms
+2023-12-14 19:38:03.459 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/Account/Logout - -
+2023-12-14 19:38:03.460 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.AccountController.Logout (LearnApp)'
+2023-12-14 19:38:03.467 +05:30 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller LearnApp.Controllers.AccountController (LearnApp).
+2023-12-14 19:38:03.471 +05:30 [INF] Account controller logout action method is fired: User Logged out successfully
+2023-12-14 19:38:03.471 +05:30 [WRN] Sample warning message
+2023-12-14 19:38:03.471 +05:30 [ERR] Sample Error message
+2023-12-14 19:38:03.471 +05:30 [FTL] Sample Critical/fatal message
+2023-12-14 19:38:03.474 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-12-14 19:38:03.476 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2023-12-14 19:38:03.476 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-12-14 19:38:03.476 +05:30 [INF] Executing RedirectResult, redirecting to /.
+2023-12-14 19:38:03.477 +05:30 [INF] Executed action LearnApp.Controllers.AccountController.Logout (LearnApp) in 9.7602ms
+2023-12-14 19:38:03.477 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.AccountController.Logout (LearnApp)'
+2023-12-14 19:38:03.477 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/Account/Logout - - - 302 0 - 18.3083ms
+2023-12-14 19:38:03.480 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/ - -
+2023-12-14 19:38:03.481 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.HomeController.Index (LearnApp)'
+2023-12-14 19:38:03.481 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LearnApp.Controllers.HomeController (LearnApp).
+2023-12-14 19:38:03.482 +05:30 [INF] Home Page action method is reached
+2023-12-14 19:38:03.483 +05:30 [INF] Executing ViewResult, running view Index.
+2023-12-14 19:38:03.492 +05:30 [INF] Executed ViewResult - view Index executed in 8.7366ms.
+2023-12-14 19:38:03.492 +05:30 [INF] Executed action LearnApp.Controllers.HomeController.Index (LearnApp) in 11.4363ms
+2023-12-14 19:38:03.492 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.HomeController.Index (LearnApp)'
+2023-12-14 19:38:03.493 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/ - - - 200 - text/html;+charset=utf-8 12.5717ms
+2023-12-14 19:38:03.522 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:38:03.523 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.2222ms
+2023-12-14 19:38:11.070 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5114/ application/x-www-form-urlencoded 219
+2023-12-14 19:38:11.070 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.HomeController.Index (LearnApp)'
+2023-12-14 19:38:11.070 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(LearnApp.Models.LoginDTO) on controller LearnApp.Controllers.HomeController (LearnApp).
+2023-12-14 19:38:11.072 +05:30 [INF] Home Page action method loginDTO is posted
+2023-12-14 19:38:11.079 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BatchId], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-12-14 19:38:11.081 +05:30 [INF] Executing ViewResult, running view Index.
+2023-12-14 19:38:11.085 +05:30 [INF] Executed ViewResult - view Index executed in 3.5504ms.
+2023-12-14 19:38:11.085 +05:30 [INF] Executed action LearnApp.Controllers.HomeController.Index (LearnApp) in 14.628ms
+2023-12-14 19:38:11.085 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.HomeController.Index (LearnApp)'
+2023-12-14 19:38:11.085 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5114/ application/x-www-form-urlencoded 219 - 200 - text/html;+charset=utf-8 15.6532ms
+2023-12-14 19:38:11.105 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:38:11.105 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.2797ms
+2023-12-14 19:38:18.019 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5114/ application/x-www-form-urlencoded 219
+2023-12-14 19:38:18.019 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.HomeController.Index (LearnApp)'
+2023-12-14 19:38:18.020 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(LearnApp.Models.LoginDTO) on controller LearnApp.Controllers.HomeController (LearnApp).
+2023-12-14 19:38:18.020 +05:30 [INF] Home Page action method loginDTO is posted
+2023-12-14 19:38:18.027 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BatchId], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-12-14 19:38:18.028 +05:30 [INF] Executing ViewResult, running view Index.
+2023-12-14 19:38:18.031 +05:30 [INF] Executed ViewResult - view Index executed in 2.7775ms.
+2023-12-14 19:38:18.032 +05:30 [INF] Executed action LearnApp.Controllers.HomeController.Index (LearnApp) in 12.1475ms
+2023-12-14 19:38:18.032 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.HomeController.Index (LearnApp)'
+2023-12-14 19:38:18.033 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5114/ application/x-www-form-urlencoded 219 - 200 - text/html;+charset=utf-8 13.3375ms
+2023-12-14 19:38:18.053 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:38:18.053 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.3636ms
+2023-12-14 19:38:32.461 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5114/ application/x-www-form-urlencoded 219
+2023-12-14 19:38:32.461 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.HomeController.Index (LearnApp)'
+2023-12-14 19:38:32.461 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(LearnApp.Models.LoginDTO) on controller LearnApp.Controllers.HomeController (LearnApp).
+2023-12-14 19:38:32.462 +05:30 [INF] Home Page action method loginDTO is posted
+2023-12-14 19:38:32.469 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BatchId], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-12-14 19:38:32.605 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-12-14 19:38:32.609 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-12-14 19:38:32.613 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-12-14 19:38:32.617 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-12-14 19:38:32.619 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-12-14 19:38:32.621 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BatchId], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-12-14 19:38:32.625 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2023-12-14 19:38:32.628 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid), @__get_Item_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__get_Item_0 AND [a].[RoleId] = @__get_Item_1
+2023-12-14 19:38:32.629 +05:30 [INF] Executing RedirectResult, redirecting to /Admins.
+2023-12-14 19:38:32.629 +05:30 [INF] Executed action LearnApp.Controllers.HomeController.Index (LearnApp) in 167.207ms
+2023-12-14 19:38:32.629 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.HomeController.Index (LearnApp)'
+2023-12-14 19:38:32.629 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5114/ application/x-www-form-urlencoded 219 - 302 0 - 168.2566ms
+2023-12-14 19:38:32.632 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/Admins - -
+2023-12-14 19:38:32.633 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.AdminsController.Index (LearnApp)'
+2023-12-14 19:38:32.636 +05:30 [INF] Route matched with {action = "Index", controller = "Admins"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LearnApp.Controllers.AdminsController (LearnApp).
+2023-12-14 19:38:32.637 +05:30 [INF] Admin Dashboard Page Index action method is fired
+2023-12-14 19:38:32.779 +05:30 [INF] Executing ViewResult, running view Index.
+2023-12-14 19:38:32.811 +05:30 [INF] Executed ViewResult - view Index executed in 32.7514ms.
+2023-12-14 19:38:32.811 +05:30 [INF] Executed action LearnApp.Controllers.AdminsController.Index (LearnApp) in 175.2431ms
+2023-12-14 19:38:32.811 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.AdminsController.Index (LearnApp)'
+2023-12-14 19:38:32.811 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/Admins - - - 200 - text/html;+charset=utf-8 179.3369ms
+2023-12-14 19:38:32.838 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:38:32.840 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 1.8990ms
+2023-12-14 19:38:34.409 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/Admins - -
+2023-12-14 19:38:34.410 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.AdminsController.Index (LearnApp)'
+2023-12-14 19:38:34.410 +05:30 [INF] Route matched with {action = "Index", controller = "Admins"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LearnApp.Controllers.AdminsController (LearnApp).
+2023-12-14 19:38:34.410 +05:30 [INF] Admin Dashboard Page Index action method is fired
+2023-12-14 19:38:34.548 +05:30 [INF] Executing ViewResult, running view Index.
+2023-12-14 19:38:34.558 +05:30 [INF] Executed ViewResult - view Index executed in 9.4822ms.
+2023-12-14 19:38:34.558 +05:30 [INF] Executed action LearnApp.Controllers.AdminsController.Index (LearnApp) in 148.0265ms
+2023-12-14 19:38:34.558 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.AdminsController.Index (LearnApp)'
+2023-12-14 19:38:34.558 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/Admins - - - 200 - text/html;+charset=utf-8 149.2189ms
+2023-12-14 19:38:34.584 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:38:34.584 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.3193ms
+2023-12-14 19:38:35.547 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/Admins/manageCourses - -
+2023-12-14 19:38:35.548 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.AdminsController.manageCourses (LearnApp)'
+2023-12-14 19:38:35.551 +05:30 [INF] Route matched with {action = "manageCourses", controller = "Admins"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult manageCourses(System.String, System.String, Int32) on controller LearnApp.Controllers.AdminsController (LearnApp).
+2023-12-14 19:38:35.555 +05:30 [INF] manage courses action method is reached
+2023-12-14 19:38:35.708 +05:30 [INF] Executing ViewResult, running view manageCourses.
+2023-12-14 19:38:35.761 +05:30 [INF] Executed ViewResult - view manageCourses executed in 54.1581ms.
+2023-12-14 19:38:35.761 +05:30 [INF] Executed action LearnApp.Controllers.AdminsController.manageCourses (LearnApp) in 209.6242ms
+2023-12-14 19:38:35.761 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.AdminsController.manageCourses (LearnApp)'
+2023-12-14 19:38:35.762 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/Admins/manageCourses - - - 200 - text/html;+charset=utf-8 214.6607ms
+2023-12-14 19:38:35.779 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:38:35.779 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.3661ms
+2023-12-14 19:38:38.196 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/Admins/manageLearners - -
+2023-12-14 19:38:38.198 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.AdminsController.manageLearners (LearnApp)'
+2023-12-14 19:38:38.201 +05:30 [INF] Route matched with {action = "manageLearners", controller = "Admins"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult manageLearners(System.String, System.String, Int32) on controller LearnApp.Controllers.AdminsController (LearnApp).
+2023-12-14 19:38:38.225 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[BatchId], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2023-12-14 19:38:38.234 +05:30 [INF] Executing ViewResult, running view manageLearners.
+2023-12-14 19:38:38.271 +05:30 [INF] Executed ViewResult - view manageLearners executed in 37.5197ms.
+2023-12-14 19:38:38.271 +05:30 [INF] Executed action LearnApp.Controllers.AdminsController.manageLearners (LearnApp) in 70.2028ms
+2023-12-14 19:38:38.271 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.AdminsController.manageLearners (LearnApp)'
+2023-12-14 19:38:38.272 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/Admins/manageLearners - - - 200 - text/html;+charset=utf-8 75.6203ms
+2023-12-14 19:38:38.290 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:38:38.291 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.1889ms
+2023-12-14 19:38:49.543 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/Admins/ManageMaterials - -
+2023-12-14 19:38:49.544 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.AdminsController.ManageMaterials (LearnApp)'
+2023-12-14 19:38:49.546 +05:30 [INF] Route matched with {action = "ManageMaterials", controller = "Admins"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ManageMaterials() on controller LearnApp.Controllers.AdminsController (LearnApp).
+2023-12-14 19:38:49.547 +05:30 [INF] manageMaterials action method is reached
+2023-12-14 19:38:49.551 +05:30 [INF] Executing ViewResult, running view ManageMaterials.
+2023-12-14 19:38:49.585 +05:30 [INF] Executed ViewResult - view ManageMaterials executed in 34.9268ms.
+2023-12-14 19:38:49.585 +05:30 [INF] Executed action LearnApp.Controllers.AdminsController.ManageMaterials (LearnApp) in 38.9034ms
+2023-12-14 19:38:49.585 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.AdminsController.ManageMaterials (LearnApp)'
+2023-12-14 19:38:49.585 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/Admins/ManageMaterials - - - 200 - text/html;+charset=utf-8 41.5526ms
+2023-12-14 19:38:49.604 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:38:49.605 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.1823ms
+2023-12-14 19:38:51.011 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/QueriesAPI/ViewQueries - -
+2023-12-14 19:38:51.012 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.QueriesAPIController.ViewQueries (LearnApp)'
+2023-12-14 19:38:51.017 +05:30 [INF] Route matched with {action = "ViewQueries", controller = "QueriesAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ViewQueries(System.String, System.String, Int32) on controller LearnApp.Controllers.QueriesAPIController (LearnApp).
+2023-12-14 19:38:51.164 +05:30 [INF] ViewQueries action method is reached and pagination is added successfully
+2023-12-14 19:38:53.929 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/Admins/manageLearners - -
+2023-12-14 19:38:53.930 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.AdminsController.manageLearners (LearnApp)'
+2023-12-14 19:38:53.930 +05:30 [INF] Route matched with {action = "manageLearners", controller = "Admins"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult manageLearners(System.String, System.String, Int32) on controller LearnApp.Controllers.AdminsController (LearnApp).
+2023-12-14 19:38:53.933 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[BatchId], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2023-12-14 19:38:53.934 +05:30 [INF] Executing ViewResult, running view manageLearners.
+2023-12-14 19:38:53.937 +05:30 [INF] Executed ViewResult - view manageLearners executed in 3.1796ms.
+2023-12-14 19:38:53.938 +05:30 [INF] Executed action LearnApp.Controllers.AdminsController.manageLearners (LearnApp) in 7.1394ms
+2023-12-14 19:38:53.938 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.AdminsController.manageLearners (LearnApp)'
+2023-12-14 19:38:53.938 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/Admins/manageLearners - - - 200 - text/html;+charset=utf-8 8.4857ms
+2023-12-14 19:38:53.963 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:38:53.963 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.2638ms
+2023-12-14 19:38:55.312 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/Admins/ManageMaterials - -
+2023-12-14 19:38:55.313 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.AdminsController.ManageMaterials (LearnApp)'
+2023-12-14 19:38:55.313 +05:30 [INF] Route matched with {action = "ManageMaterials", controller = "Admins"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ManageMaterials() on controller LearnApp.Controllers.AdminsController (LearnApp).
+2023-12-14 19:38:55.314 +05:30 [INF] manageMaterials action method is reached
+2023-12-14 19:38:55.314 +05:30 [INF] Executing ViewResult, running view ManageMaterials.
+2023-12-14 19:38:55.316 +05:30 [INF] Executed ViewResult - view ManageMaterials executed in 2.3352ms.
+2023-12-14 19:38:55.316 +05:30 [INF] Executed action LearnApp.Controllers.AdminsController.ManageMaterials (LearnApp) in 2.6717ms
+2023-12-14 19:38:55.316 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.AdminsController.ManageMaterials (LearnApp)'
+2023-12-14 19:38:55.317 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/Admins/ManageMaterials - - - 200 - text/html;+charset=utf-8 4.0998ms
+2023-12-14 19:38:55.349 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:38:55.350 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.3694ms
+2023-12-14 19:38:55.384 +05:30 [INF] Executed action LearnApp.Controllers.QueriesAPIController.ViewQueries (LearnApp) in 4366.6567ms
+2023-12-14 19:38:55.384 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.QueriesAPIController.ViewQueries (LearnApp)'
+2023-12-14 19:38:55.386 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it. (localhost:5000))
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:5000)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at LearnApp.Controllers.QueriesAPIController.ViewQueries(String searchBy, String searchString, Int32 page) in F:\Aspire\Learning_Management_System\LearnApp\Controllers\QueriesAPIController.cs:line 41
+   at lambda_method389(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-14 19:38:55.485 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/QueriesAPI/ViewQueries - - - 500 - text/html;+charset=utf-8 4473.9650ms
+2023-12-14 19:38:57.112 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/Admins/ViewMaterials - -
+2023-12-14 19:38:57.113 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.AdminsController.ViewMaterials (LearnApp)'
+2023-12-14 19:38:57.115 +05:30 [INF] Route matched with {action = "ViewMaterials", controller = "Admins"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ViewMaterials() on controller LearnApp.Controllers.AdminsController (LearnApp).
+2023-12-14 19:38:57.116 +05:30 [INF] ViewMaterials action method is reached
+2023-12-14 19:38:57.150 +05:30 [INF] Executing ViewResult, running view ViewMaterials.
+2023-12-14 19:38:57.161 +05:30 [INF] Executed ViewResult - view ViewMaterials executed in 12.2647ms.
+2023-12-14 19:38:57.161 +05:30 [INF] Executed action LearnApp.Controllers.AdminsController.ViewMaterials (LearnApp) in 45.719ms
+2023-12-14 19:38:57.161 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.AdminsController.ViewMaterials (LearnApp)'
+2023-12-14 19:38:57.161 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/Admins/ViewMaterials - - - 200 - text/html;+charset=utf-8 49.0334ms
+2023-12-14 19:38:57.179 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:38:57.179 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.1720ms
+2023-12-14 19:38:58.933 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/Admins - -
+2023-12-14 19:38:58.934 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.AdminsController.Index (LearnApp)'
+2023-12-14 19:38:58.934 +05:30 [INF] Route matched with {action = "Index", controller = "Admins"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LearnApp.Controllers.AdminsController (LearnApp).
+2023-12-14 19:38:58.934 +05:30 [INF] Admin Dashboard Page Index action method is fired
+2023-12-14 19:38:59.098 +05:30 [INF] Executing ViewResult, running view Index.
+2023-12-14 19:38:59.131 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:38:59.131 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.5455ms
+2023-12-14 19:38:59.133 +05:30 [INF] Executed ViewResult - view Index executed in 35.1382ms.
+2023-12-14 19:38:59.133 +05:30 [INF] Executed action LearnApp.Controllers.AdminsController.Index (LearnApp) in 198.8356ms
+2023-12-14 19:38:59.133 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.AdminsController.Index (LearnApp)'
+2023-12-14 19:38:59.133 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/Admins - - - 200 - text/html;+charset=utf-8 199.9373ms
+2023-12-14 19:39:02.204 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/Account/Logout - -
+2023-12-14 19:39:02.205 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.AccountController.Logout (LearnApp)'
+2023-12-14 19:39:02.206 +05:30 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller LearnApp.Controllers.AccountController (LearnApp).
+2023-12-14 19:39:02.206 +05:30 [INF] Account controller logout action method is fired: User Logged out successfully
+2023-12-14 19:39:02.206 +05:30 [WRN] Sample warning message
+2023-12-14 19:39:02.206 +05:30 [ERR] Sample Error message
+2023-12-14 19:39:02.206 +05:30 [FTL] Sample Critical/fatal message
+2023-12-14 19:39:02.207 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-12-14 19:39:02.207 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2023-12-14 19:39:02.207 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-12-14 19:39:02.207 +05:30 [INF] Executing RedirectResult, redirecting to /.
+2023-12-14 19:39:02.207 +05:30 [INF] Executed action LearnApp.Controllers.AccountController.Logout (LearnApp) in 1.6559ms
+2023-12-14 19:39:02.207 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.AccountController.Logout (LearnApp)'
+2023-12-14 19:39:02.208 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/Account/Logout - - - 302 0 - 3.5331ms
+2023-12-14 19:39:02.210 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/ - -
+2023-12-14 19:39:02.211 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.HomeController.Index (LearnApp)'
+2023-12-14 19:39:02.211 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LearnApp.Controllers.HomeController (LearnApp).
+2023-12-14 19:39:02.212 +05:30 [INF] Home Page action method is reached
+2023-12-14 19:39:02.212 +05:30 [INF] Executing ViewResult, running view Index.
+2023-12-14 19:39:02.215 +05:30 [INF] Executed ViewResult - view Index executed in 2.7585ms.
+2023-12-14 19:39:02.215 +05:30 [INF] Executed action LearnApp.Controllers.HomeController.Index (LearnApp) in 3.5791ms
+2023-12-14 19:39:02.215 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.HomeController.Index (LearnApp)'
+2023-12-14 19:39:02.215 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/ - - - 200 - text/html;+charset=utf-8 4.8034ms
+2023-12-14 19:39:02.247 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 19:39:02.247 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.3001ms
