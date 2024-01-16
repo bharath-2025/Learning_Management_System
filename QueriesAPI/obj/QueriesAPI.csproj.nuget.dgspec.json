@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Aspire\\QueriesAPI\\QueriesAPI.csproj": {}
+    "F:\\Aspire\\Learning_Management_System\\QueriesAPI\\QueriesAPI.csproj": {}
   },
   "projects": {
-    "F:\\Aspire\\QueriesAPI\\QueriesAPI.csproj": {
+    "F:\\Aspire\\Learning_Management_System\\QueriesAPI\\QueriesAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Aspire\\QueriesAPI\\QueriesAPI.csproj",
+        "projectUniqueName": "F:\\Aspire\\Learning_Management_System\\QueriesAPI\\QueriesAPI.csproj",
         "projectName": "QueriesAPI",
-        "projectPath": "F:\\Aspire\\QueriesAPI\\QueriesAPI.csproj",
+        "projectPath": "F:\\Aspire\\Learning_Management_System\\QueriesAPI\\QueriesAPI.csproj",
         "packagesPath": "C:\\Users\\Bharath2025\\.nuget\\packages\\",
-        "outputPath": "F:\\Aspire\\QueriesAPI\\obj\\",
+        "outputPath": "F:\\Aspire\\Learning_Management_System\\QueriesAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

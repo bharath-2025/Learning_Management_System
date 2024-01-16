@@ -1,0 +1,54 @@
+2024-01-08 22:07:35.618 +05:30 [INF] Log Message - Info
+2024-01-08 22:07:35.663 +05:30 [WRN] Log Message - Warning
+2024-01-08 22:07:35.663 +05:30 [ERR] Log Message - Error
+2024-01-08 22:07:35.663 +05:30 [FTL] Log Message - Critical
+2024-01-08 22:07:35.938 +05:30 [INF] User profile is available. Using 'C:\Users\Bharath2025\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-08 22:07:36.033 +05:30 [INF] Now listening on: http://localhost:5114
+2024-01-08 22:07:36.033 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-08 22:07:36.034 +05:30 [INF] Hosting environment: Development
+2024-01-08 22:07:36.034 +05:30 [INF] Content root path: F:\Aspire\Learning_Management_System\LearnApp
+2024-01-08 22:07:37.098 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/ - -
+2024-01-08 22:07:37.241 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-01-08 22:07:37.324 +05:30 [INF] Executing endpoint 'LearnApp.Controllers.HomeController.Index (LearnApp)'
+2024-01-08 22:07:37.371 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LearnApp.Controllers.HomeController (LearnApp).
+2024-01-08 22:07:37.791 +05:30 [INF] Home Page action method is reached
+2024-01-08 22:07:37.817 +05:30 [INF] Executing ViewResult, running view Index.
+2024-01-08 22:07:38.183 +05:30 [INF] Executed ViewResult - view Index executed in 376.6102ms.
+2024-01-08 22:07:38.194 +05:30 [INF] Executed action LearnApp.Controllers.HomeController.Index (LearnApp) in 821.0232ms
+2024-01-08 22:07:38.194 +05:30 [INF] Executed endpoint 'LearnApp.Controllers.HomeController.Index (LearnApp)'
+2024-01-08 22:07:38.207 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/ - - - 200 - text/html;+charset=utf-8 1114.4592ms
+2024-01-08 22:07:38.213 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/css/site.css?v=FXQqF3szCiL7qOsqAW3j5Wpaym2Au4kJXljVe2bf1oQ - -
+2024-01-08 22:07:38.223 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/css/home.css?v=vffHF_WQb1lNIMJbX2rgUxpazNIVT0FjRSzyfwPdHiY - -
+2024-01-08 22:07:38.228 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/lib/bootstrap/dist/css/bootstrap.min.css - -
+2024-01-08 22:07:38.238 +05:30 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'F:\Aspire\Learning_Management_System\LearnApp\wwwroot\css\site.css'
+2024-01-08 22:07:38.238 +05:30 [INF] Sending file. Request path: '/css/home.css'. Physical path: 'F:\Aspire\Learning_Management_System\LearnApp\wwwroot\css\home.css'
+2024-01-08 22:07:38.239 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/css/home.css?v=vffHF_WQb1lNIMJbX2rgUxpazNIVT0FjRSzyfwPdHiY - - - 200 4142 text/css 15.6012ms
+2024-01-08 22:07:38.239 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/css/site.css?v=FXQqF3szCiL7qOsqAW3j5Wpaym2Au4kJXljVe2bf1oQ - - - 200 421 text/css 25.5878ms
+2024-01-08 22:07:38.254 +05:30 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'F:\Aspire\Learning_Management_System\LearnApp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2024-01-08 22:07:38.258 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162720 text/css 30.2940ms
+2024-01-08 22:07:38.259 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/lib/jquery/dist/jquery.min.js - -
+2024-01-08 22:07:38.260 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2024-01-08 22:07:38.365 +05:30 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'F:\Aspire\Learning_Management_System\LearnApp\wwwroot\lib\jquery\dist\jquery.min.js'
+2024-01-08 22:07:38.367 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/lib/jquery/dist/jquery.min.js - - - 200 89501 text/javascript 107.6403ms
+2024-01-08 22:07:38.369 +05:30 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'F:\Aspire\Learning_Management_System\LearnApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2024-01-08 22:07:38.371 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 text/javascript 109.8953ms
+2024-01-08 22:07:39.103 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/lib/jquery-validation/dist/jquery.validate.min.js - -
+2024-01-08 22:07:39.103 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - -
+2024-01-08 22:07:39.105 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2024-01-08 22:07:39.106 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - -
+2024-01-08 22:07:39.106 +05:30 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'F:\Aspire\Learning_Management_System\LearnApp\wwwroot\js\site.js'
+2024-01-08 22:07:39.107 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 text/javascript 1.5303ms
+2024-01-08 22:07:39.107 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/media/aspire-logo.png - -
+2024-01-08 22:07:39.109 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 3.7922ms
+2024-01-08 22:07:39.216 +05:30 [INF] Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js'. Physical path: 'F:\Aspire\Learning_Management_System\LearnApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js'
+2024-01-08 22:07:39.217 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - - - 200 5824 text/javascript 113.7500ms
+2024-01-08 22:07:39.222 +05:30 [INF] Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.min.js'. Physical path: 'F:\Aspire\Learning_Management_System\LearnApp\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js'
+2024-01-08 22:07:39.223 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/lib/jquery-validation/dist/jquery.validate.min.js - - - 200 23261 text/javascript 120.3534ms
+2024-01-08 22:07:39.229 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/media/login.png - -
+2024-01-08 22:07:39.243 +05:30 [INF] Sending file. Request path: '/media/aspire-logo.png'. Physical path: 'F:\Aspire\Learning_Management_System\LearnApp\wwwroot\media\aspire-logo.png'
+2024-01-08 22:07:39.245 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/media/aspire-logo.png - - - 200 120016 image/png 137.7487ms
+2024-01-08 22:07:39.261 +05:30 [INF] Sending file. Request path: '/media/login.png'. Physical path: 'F:\Aspire\Learning_Management_System\LearnApp\wwwroot\media\login.png'
+2024-01-08 22:07:39.261 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/media/login.png - - - 200 110352 image/png 31.8384ms
+2024-01-08 22:07:41.989 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5114/favicon.ico - -
+2024-01-08 22:07:41.996 +05:30 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'F:\Aspire\Learning_Management_System\LearnApp\wwwroot\favicon.ico'
+2024-01-08 22:07:41.997 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5114/favicon.ico - - - 200 5430 image/x-icon 7.7779ms

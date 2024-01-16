@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PfVY3rIEKiTWptunMFALRhor8NX/LmPTSh6bRdwcGjMX5JvhczutwptIQS65ntHAEEiC+rcKR4U7rpWiaWNaVA==",
+  "dgSpecHash": "f9k9OfcXlaIQkdjQ6CBwwiZYtfDBOxJxN5Dohr7zyaCzIxrwf1YYK5CzooQq5FL33Yfrrvk/hH0m3gJYlAl6Pg==",
   "success": true,
-  "projectFilePath": "F:\\Aspire\\QueriesAPI\\QueriesAPI.csproj",
+  "projectFilePath": "F:\\Aspire\\Learning_Management_System\\QueriesAPI\\QueriesAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bharath2025\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Bharath2025\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
